@@ -1,0 +1,5 @@
+<map id="Forest::RealPin::set_center" name="Forest::RealPin::set_center">
+<area shape="rect" id="node2" href="$classForest_1_1RealAssembly.html#a7debf4e0526fcd6419b73a230c36bfd6" title="Forest::RealAssembly\l::set_assembly_grid" alt="" coords="199,5,351,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1RealAssembly.html#a4c038a9fcc3173ebf9c1d58d7d7f15cf" title="Forest::RealAssembly\l::set_assembly_pin_map" alt="" coords="192,71,359,112"/>
+<area shape="rect" id="node3" href="$classForest_1_1RealAssembly.html#a42bfe65704b15f518d090864d48b0a9f" title="Forest::RealAssembly\l::build_pins" alt="" coords="407,39,559,80"/>
+</map>

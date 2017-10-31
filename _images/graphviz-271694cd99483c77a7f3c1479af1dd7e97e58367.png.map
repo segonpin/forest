@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="clust1" href="input.html" title="Input Data" alt="" coords="47,16,389,103"/>
+<area shape="rect" id="clust4" href="../methods/thermalhydraulics.html" title="Thermal&#45;Hydraulics" alt="" coords="27,193,216,445"/>
+<area shape="rect" id="clust6" href="../methods/neutronics.html" title="Neutronics" alt="" coords="227,193,592,445"/>
+<area shape="rect" id="clust3" href="../methods/multiphysics.html" title="Multi&#45;Physics" alt="" coords="16,152,603,456"/>
+<area shape="rect" id="clust8" href="output.html" title="Output Results" alt="" coords="43,495,392,581"/>
+</map>

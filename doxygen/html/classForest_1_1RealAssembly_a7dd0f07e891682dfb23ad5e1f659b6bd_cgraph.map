@@ -1,0 +1,5 @@
+<map id="Forest::RealAssembly::init" name="Forest::RealAssembly::init">
+<area shape="rect" id="node2" href="$classForest_1_1RealAssembly.html#af2a090ce74d790c9057697602efcce4c" title="Used to fill the object with data from a Forest::Lattice object. " alt="" coords="205,5,357,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1RealAssembly.html#aea6a35670ced4d739a228cdaa0ca7ff4" title="Set the origin of the assembly to origin. " alt="" coords="205,71,357,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1RealAssembly.html#a28f5d0bc3145310a6f366223b2dde0b4" title="Set the correction factor to correction_factor. " alt="" coords="205,136,357,177"/>
+</map>

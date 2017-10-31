@@ -1,0 +1,5 @@
+<map id="Forest::InputFiles::write" name="Forest::InputFiles::write">
+<area shape="rect" id="node2" href="$classForest_1_1InputSettings.html#a9869534aaa8cf6599a4e0529ee71532e" title="This performs the inverse operation of the load function, printing the information in a file..." alt="" coords="191,5,335,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputProblem.html#acefcf315fed6341165686af54bea1b42" title="Forest::InputProblem::set" alt="" coords="177,71,348,98"/>
+<area shape="rect" id="node4" href="$classForest_1_1InputSettings.html#a3585fb9f9ddf92a9f29b26b29c9ae45a" title="Forest::InputSettings\l::set_problem" alt="" coords="396,64,540,105"/>
+</map>

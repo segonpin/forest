@@ -1,0 +1,12 @@
+<map id="Forest::QuadratureChebyshevLegendre::QuadratureChebyshevLegendre" name="Forest::QuadratureChebyshevLegendre::QuadratureChebyshevLegendre">
+<area shape="rect" id="node2" href="$classForest_1_1QuadratureBase.html#a12c5effa530ef0927871993de0ad0c88" title="Forest::QuadratureBase\l::set_a_order" alt="" coords="345,5,507,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1QuadratureBase.html#adaba56f00b9c550b993f9c76e58f8cd6" title="Forest::QuadratureBase\l::set_p_order" alt="" coords="345,71,507,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1QuadratureBase.html#acaf6a1a2170017b69839dc8c61ad9f7b" title="Forest::QuadratureBase\l::set_order" alt="" coords="345,136,507,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1QuadratureBase.html#aa164ae3a3abfd9669197552cea0322fe" title="Forest::QuadratureBase\l::set_n_leg_moments" alt="" coords="345,201,507,243"/>
+<area shape="rect" id="node6" href="$classForest_1_1QuadratureChebyshevLegendre.html#a0e1d55931cab74709eb1e67ee1ecf3d6" title="Forest::QuadratureChebyshev\lLegendre::set_ordinates" alt="" coords="327,267,525,308"/>
+<area shape="rect" id="node7" href="$classForest_1_1QuadratureBase.html#a403d6468ddc469d59ed3627bd6c5fd94" title="Forest::QuadratureBase\l::set_all_angles" alt="" coords="345,332,507,373"/>
+<area shape="rect" id="node9" href="$classForest_1_1QuadratureChebyshevLegendre.html#a7161e66668b359cc14af0ca765e352cc" title="Forest::QuadratureChebyshev\lLegendre::get_dimension_weight" alt="" coords="320,397,532,439"/>
+<area shape="rect" id="node10" href="$classForest_1_1QuadratureBase.html#ace596c049216e626004057f7bf9590bc" title="j_ord = bc_map(f, i_ord), with " alt="" coords="345,463,507,504"/>
+<area shape="rect" id="node11" href="$classForest_1_1QuadratureBase.html#ab5cbea1a03c7fc0b5503ebbdeeab9120" title="j_ord = bc_map(f, i_ord), with " alt="" coords="345,528,507,569"/>
+<area shape="rect" id="node8" href="$classForest_1_1QuadratureBase.html#a5fea5a6eba6622600aa6beeed9ad9ca9" title="Return cardinal angle index. " alt="" coords="580,332,741,373"/>
+</map>

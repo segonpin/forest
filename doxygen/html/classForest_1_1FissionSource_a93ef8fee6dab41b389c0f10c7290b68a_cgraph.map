@@ -1,0 +1,6 @@
+<map id="Forest::FissionSource::~FissionSource" name="Forest::FissionSource::~FissionSource">
+<area shape="rect" id="node2" href="$classForest_1_1FissionSource.html#a10899a48d77cacf2294682893a2ba4f4" title="True when the operator is matrix free, false otherwise. " alt="" coords="208,5,359,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1FissionSource.html#aefb22f256726c9f0501b8dd105e71e5d" title="Apply the fission operator to phi and store the result in source. " alt="" coords="208,71,359,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1FissionSource.html#a687e82cbf342a516a427870eef0b80d2" title="Apply the fission operator to phi and add the result to source. " alt="" coords="208,136,359,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1FissionSource.html#ad5ac6c30e85f28eadb0a4e3399ccc7ba" title="The memory required by the elements of the class. " alt="" coords="204,201,363,243"/>
+</map>

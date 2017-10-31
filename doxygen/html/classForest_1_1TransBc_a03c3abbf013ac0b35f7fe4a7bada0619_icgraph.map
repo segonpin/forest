@@ -1,0 +1,5 @@
+<map id="Forest::TransBc::apply_LR_g_iord" name="Forest::TransBc::apply_LR_g_iord">
+<area shape="rect" id="node2" href="$classForest_1_1TransBc.html#a614dd2def7a66d002123db4e6b0c7d6d" title="Add the reflective boundary conditions to the source term. " alt="" coords="215,5,394,32"/>
+<area shape="rect" id="node3" href="$classForest_1_1TransBc.html#a2071bf8aebb0575a5b21c233ac24d708" title="The same as apply_LR but only for group g. " alt="" coords="208,56,401,83"/>
+<area shape="rect" id="node4" href="$classForest_1_1TransBc.html#aed3c6b1167472c9a1677ea28b7f14a15" title="Add the reflective boundary conditions to the source term. " alt="" coords="449,56,628,83"/>
+</map>

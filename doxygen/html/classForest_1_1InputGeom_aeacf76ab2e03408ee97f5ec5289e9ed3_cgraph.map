@@ -1,0 +1,10 @@
+<map id="Forest::InputGeom::InputGeom" name="Forest::InputGeom::InputGeom">
+<area shape="rect" id="node2" href="$classForest_1_1InputGeom.html#ac45a69cd81d822e3ad1604ffee9d6813" title="read and store data " alt="" coords="192,99,331,141"/>
+<area shape="rect" id="node7" href="$classForest_1_1InputGeom.html#ad084ef7def8b195a9b1fe6c2994f8a17" title="Check the different structures. " alt="" coords="192,209,331,250"/>
+<area shape="rect" id="node3" href="$namespaceForest.html#aaf59771c22c8737b7f9e84c9c0c96b08" title="Forest::string_to_vector" alt="" coords="379,5,539,32"/>
+<area shape="rect" id="node4" href="$classForest_1_1Core.html#a147671d28c039145a5f5c7374419ca63" title="Forest::Core::set" alt="" coords="398,56,519,83"/>
+<area shape="rect" id="node5" href="$classForest_1_1Lattice.html#a3b0423e3220adc08b12ab184b9c6c91d" title="Forest::Lattice::set" alt="" coords="393,107,525,133"/>
+<area shape="rect" id="node6" href="$classForest_1_1Pin.html#abe015b9447b9d0d82ca7db139bb3108c" title="Forest::Pin::set" alt="" coords="403,157,515,184"/>
+<area shape="rect" id="node8" href="$classForest_1_1InputGeom.html#a5e774d42ca38e09c10a55e73492b4258" title="Check the core. " alt="" coords="389,209,528,250"/>
+<area shape="rect" id="node9" href="$classForest_1_1InputGeom.html#abfa75ea52b8dcfe6ebc85a81225c2f7e" title="Check the lattices. " alt="" coords="389,274,528,315"/>
+</map>

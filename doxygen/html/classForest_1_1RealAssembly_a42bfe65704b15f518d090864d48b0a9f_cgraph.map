@@ -1,0 +1,7 @@
+<map id="Forest::RealAssembly::build_pins" name="Forest::RealAssembly::build_pins">
+<area shape="rect" id="node2" href="$classForest_1_1RealAssembly.html#a4c038a9fcc3173ebf9c1d58d7d7f15cf" title="Forest::RealAssembly\l::set_assembly_pin_map" alt="" coords="205,27,372,69"/>
+<area shape="rect" id="node6" href="$classForest_1_1RealAssembly.html#a7debf4e0526fcd6419b73a230c36bfd6" title="Forest::RealAssembly\l::set_assembly_grid" alt="" coords="213,93,365,134"/>
+<area shape="rect" id="node3" href="$classForest_1_1RealPin.html#a574ed34c1b26a9153e60f52e2b7be143" title="The initializer. " alt="" coords="420,5,559,32"/>
+<area shape="rect" id="node4" href="$classForest_1_1RealPin.html#a3d3a45175a0d2a30c8482372581146c7" title="set the pitch " alt="" coords="420,57,559,98"/>
+<area shape="rect" id="node5" href="$classForest_1_1RealPin.html#a95e371410b7a6017b948cc77645bddb8" title="Set the center of the pin. " alt="" coords="420,122,559,163"/>
+</map>

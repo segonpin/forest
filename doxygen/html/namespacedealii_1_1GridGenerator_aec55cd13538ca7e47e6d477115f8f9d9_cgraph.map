@@ -1,0 +1,4 @@
+<map id="dealii::GridGenerator::pin_cell2" name="dealii::GridGenerator::pin_cell2">
+<area shape="rect" id="node2" href="$namespacedealii_1_1GridGenerator.html#aaf65a3c53454087d7c547f5f6b528e89" title="Function to build the mesh for a pin of type PinType::PIN. " alt="" coords="199,5,341,47"/>
+<area shape="rect" id="node3" href="$namespacedealii_1_1GridGenerator.html#a5f744d73f4696eb74e2c28a769822673" title="dealii::GridGenerator\l::extrude_triangulation" alt="" coords="195,71,345,112"/>
+</map>

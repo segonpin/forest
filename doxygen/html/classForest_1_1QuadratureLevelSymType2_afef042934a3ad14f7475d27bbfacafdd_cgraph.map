@@ -1,0 +1,14 @@
+<map id="Forest::QuadratureLevelSymType2::QuadratureLevelSymType2" name="Forest::QuadratureLevelSymType2::QuadratureLevelSymType2">
+<area shape="rect" id="node2" href="$classForest_1_1QuadratureBase.html#a12c5effa530ef0927871993de0ad0c88" title="Forest::QuadratureBase\l::set_a_order" alt="" coords="294,5,455,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1QuadratureBase.html#adaba56f00b9c550b993f9c76e58f8cd6" title="Forest::QuadratureBase\l::set_p_order" alt="" coords="294,71,455,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1QuadratureBase.html#acaf6a1a2170017b69839dc8c61ad9f7b" title="Forest::QuadratureBase\l::set_order" alt="" coords="294,136,455,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1QuadratureBase.html#aa164ae3a3abfd9669197552cea0322fe" title="Forest::QuadratureBase\l::set_n_leg_moments" alt="" coords="294,201,455,243"/>
+<area shape="rect" id="node6" href="$classForest_1_1QuadratureLevelSymType2.html#a7fb18cfbfa48ff0020ca82ca4c251c58" title="Forest::QuadratureLevelSym\lType2::set_ordinates" alt="" coords="280,267,469,308"/>
+<area shape="rect" id="node9" href="$classForest_1_1QuadratureBase.html#a403d6468ddc469d59ed3627bd6c5fd94" title="Forest::QuadratureBase\l::set_all_angles" alt="" coords="294,332,455,373"/>
+<area shape="rect" id="node11" href="$classForest_1_1QuadratureLevelSymType2.html#a3feab65d1eba947730f2288ae5dd3dc2" title="Forest::QuadratureLevelSym\lType2::get_dimension_weight" alt="" coords="277,397,472,439"/>
+<area shape="rect" id="node12" href="$classForest_1_1QuadratureBase.html#ace596c049216e626004057f7bf9590bc" title="j_ord = bc_map(f, i_ord), with " alt="" coords="294,463,455,504"/>
+<area shape="rect" id="node13" href="$classForest_1_1QuadratureBase.html#ab5cbea1a03c7fc0b5503ebbdeeab9120" title="j_ord = bc_map(f, i_ord), with " alt="" coords="294,528,455,569"/>
+<area shape="rect" id="node7" href="$classForest_1_1QuadratureLevelSymType2.html#a4e770539ca63ddecd0ad72fa51719a98" title="Hardcoding several values for the discrete ordinates generation. " alt="" coords="520,201,709,243"/>
+<area shape="rect" id="node8" href="$classForest_1_1QuadratureLevelSymType2.html#a535eed117f06faf00e8d1b131db6efd4" title="S_2 weight distribution {1};. " alt="" coords="520,267,709,308"/>
+<area shape="rect" id="node10" href="$classForest_1_1QuadratureBase.html#a5fea5a6eba6622600aa6beeed9ad9ca9" title="Return cardinal angle index. " alt="" coords="534,332,695,373"/>
+</map>

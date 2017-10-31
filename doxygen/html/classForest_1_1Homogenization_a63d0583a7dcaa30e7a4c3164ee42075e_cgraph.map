@@ -1,0 +1,9 @@
+<map id="Forest::Homogenization::Homogenization" name="Forest::Homogenization::Homogenization">
+<area shape="rect" id="node2" href="$classForest_1_1Homogenization.html#a3e8fb39e9e3f3c7cf958f33dde59f8a8" title="Calculate flux weight per cell. " alt="" coords="226,5,387,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1Homogenization.html#abe4c24a7ba3f151a078d9a4520d84a4c" title="Homogenize at pin level. " alt="" coords="226,136,387,177"/>
+<area shape="rect" id="node8" href="$classForest_1_1Homogenization.html#a33a46cc4a51bde57506d08eb048195a1" title="Homogenize at assembly level. " alt="" coords="215,71,399,112"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputSettings.html#aaabac3d6b27368915d9d126bfd8b5c66" title="Forest::InputSettings\l::get_fe_degree" alt="" coords="455,5,599,47"/>
+<area shape="rect" id="node5" href="$classForest_1_1Homogenization.html#a6fa7c98d690b813f0fbf730fc68403bc" title="Homogenize at pin level. " alt="" coords="447,71,608,112"/>
+<area shape="rect" id="node6" href="$classForest_1_1Homogenization.html#a69c566e4767b8471a80bfe758fab27f7" title="Homogenize at pin level. " alt="" coords="447,136,608,177"/>
+<area shape="rect" id="node7" href="$classForest_1_1Homogenization.html#a70d3673030fad98ce6aded160aea48c8" title="Homogenize at pin level. " alt="" coords="447,201,608,243"/>
+</map>

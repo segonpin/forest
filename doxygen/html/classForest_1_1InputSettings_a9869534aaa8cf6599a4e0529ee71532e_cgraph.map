@@ -1,0 +1,7 @@
+<map id="Forest::InputSettings::save_xml" name="Forest::InputSettings::save_xml">
+<area shape="rect" id="node2" href="$classForest_1_1InputFiles.html#ab94addf995bb36620294a9bd135f728d" title="Write the content of the files in a xml tree. " alt="" coords="216,5,340,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputOutput.html#a9d6e6fdc3b75c18ba6faab982128843c" title="Forest::InputOutput\l::write" alt="" coords="211,71,345,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1InputProblem.html#a6241b0d7f25c42b5e255a901b66f1e5f" title="Forest::InputProblem\l::write" alt="" coords="206,136,350,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1InputAlgebra.html#a612c8f656b7417a993632034684da346" title="Forest::InputAlgebra\l::write" alt="" coords="208,201,348,243"/>
+<area shape="rect" id="node6" href="$classForest_1_1InputFESettings.html#a38041d715c20111aa6d3e500fa812a6c" title="Forest::InputFESettings\l::write" alt="" coords="197,267,359,308"/>
+</map>

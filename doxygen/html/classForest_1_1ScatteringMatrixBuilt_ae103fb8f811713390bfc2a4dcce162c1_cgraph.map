@@ -1,0 +1,5 @@
+<map id="Forest::ScatteringMatrixBuilt::ScatteringMatrixBuilt" name="Forest::ScatteringMatrixBuilt::ScatteringMatrixBuilt">
+<area shape="rect" id="node2" href="$classForest_1_1ScatteringMatrixBuilt.html#a9e8d4152706091f99b78c3ef2538e430" title="Forest::ScatteringMatrix\lBuilt::set_non_zero_pattern" alt="" coords="231,5,412,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1ScatteringMatrixBuilt.html#acb154d87764c4faf1b70a3a21cf4c739" title="Prepare sparsity patterns to setup the systems. " alt="" coords="240,71,403,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1ScatteringMatrixBuilt.html#aebb53eece96225397e5f9fd5d3fc868e" title="Build the system for the non&#45;matrix&#45;free option. " alt="" coords="240,136,403,177"/>
+</map>

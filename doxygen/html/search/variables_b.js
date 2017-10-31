@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['n',['n',['../classForest_1_1QZsolver.html#a03ac0e7522cd3ccbb0cb29048136c9dd',1,'Forest::QZsolver::n()'],['../classForest_1_1LUsolver.html#a25c8dfe37bb7ca85f66a98ab189bd5cc',1,'Forest::LUsolver::n()']]],
+  ['n_5fangles',['n_angles',['../classForest_1_1QuadratureBase.html#a75db6f2378136e7461fdf8ae462b9193',1,'Forest::QuadratureBase']]],
+  ['n_5fangles_5fper_5foctant',['n_angles_per_octant',['../classForest_1_1QuadratureBase.html#ad4a41e7850fe6482551c3041e49e36fe',1,'Forest::QuadratureBase']]],
+  ['n_5fassemblies',['n_assemblies',['../classForest_1_1ProbGeom.html#a27b13f1d980bf10a764088821c461d88',1,'Forest::ProbGeom']]],
+  ['n_5fcosines',['n_cosines',['../classForest_1_1QuadratureGaussChebyshev.html#ad343b6cdf4c5f68adf508e52e926df66',1,'Forest::QuadratureGaussChebyshev::n_cosines()'],['../classForest_1_1QuadratureLevelSymType1.html#a761a6a76134bf03453dbf275b50cd87d',1,'Forest::QuadratureLevelSymType1::n_cosines()'],['../classForest_1_1QuadratureLevelSymType2.html#aade0209702a23f0d2bce26ed40124933',1,'Forest::QuadratureLevelSymType2::n_cosines()']]],
+  ['n_5fcv',['n_cv',['../classForest_1_1EigenSolverSLEPC.html#a5b8a1977337f4c2b27643498a9900a22',1,'Forest::EigenSolverSLEPC']]],
+  ['n_5feigenvalues',['n_eigenvalues',['../classForest_1_1EigenSolverSLEPC.html#a9acb11ef07e34e1e97967b422fc52628',1,'Forest::EigenSolverSLEPC']]],
+  ['n_5fgroups',['n_groups',['../classForest_1_1EigenSolverSLEPC.html#a0759be2237756148635a37d5647ce79b',1,'Forest::EigenSolverSLEPC::n_groups()'],['../classForest_1_1XS__single.html#ae7402fe5ea4344c4633b10ea3d4999cb',1,'Forest::XS_single::n_groups()'],['../classForest_1_1InputMat.html#a9a125cd1af7230f51e139f6b371194cd',1,'Forest::InputMat::n_groups()']]],
+  ['n_5fiterations',['n_iterations',['../classForest_1_1EigenSolverSLEPC.html#aa35dff2a0d2935f32257353178054aa3',1,'Forest::EigenSolverSLEPC']]],
+  ['n_5fleg_5fmoments',['n_leg_moments',['../classForest_1_1QuadratureBase.html#aa68cbe8598a7551ab30926af3171c057',1,'Forest::QuadratureBase']]],
+  ['n_5fmat',['n_mat',['../classForest_1_1InputMat.html#ac1595905c084d6248e552120f961cc33',1,'Forest::InputMat']]],
+  ['n_5fmatvec_5fmultiplications',['n_matvec_multiplications',['../classForest_1_1EigenSolverSLEPC.html#a0567cf48ebed8ac51bedefa57af2c628',1,'Forest::EigenSolverSLEPC']]],
+  ['n_5foctants',['n_octants',['../classForest_1_1QuadratureBase.html#a43e355c04afd6d683751c6c1cdb22b18',1,'Forest::QuadratureBase']]],
+  ['n_5fpins',['n_pins',['../classForest_1_1ProbGeom.html#aa82ebf4278ca215c1728cd0a965396a3',1,'Forest::ProbGeom']]],
+  ['na',['na',['../classForest_1_1QuadratureChebyshevLegendre.html#a57e2ed35098f1a2592dc6fa8073f0592',1,'Forest::QuadratureChebyshevLegendre']]],
+  ['name',['name',['../classForest_1_1QuadratureBase.html#a99a0e126c168f48c9e600d37a8c56190',1,'Forest::QuadratureBase::name()'],['../classForest_1_1XS__single.html#ac5020c0699c94953e7cedb74238602af',1,'Forest::XS_single::name()']]],
+  ['neighbor_5fdof_5findices',['neighbor_dof_indices',['../classForest_1_1MatrixFreeIntegrator.html#af36507064dbe4911b71171c5aca3e166',1,'Forest::MatrixFreeIntegrator']]],
+  ['neighbor_5fdst',['neighbor_dst',['../classForest_1_1MatrixFreeIntegrator.html#aea4070b1cd70a76445727af1ca271c5d',1,'Forest::MatrixFreeIntegrator']]],
+  ['neighbor_5fsrc',['neighbor_src',['../classForest_1_1MatrixFreeIntegrator.html#ae94cc3c6bbfc3f78d0a6694b3e8cd375',1,'Forest::MatrixFreeIntegrator']]],
+  ['neighbor_5fupdate_5fflags',['neighbor_update_flags',['../classForest_1_1MatrixFreeIntegrator.html#a3c779a2fff9d5ed8242f098142485216',1,'Forest::MatrixFreeIntegrator']]],
+  ['newmat',['newMat',['../classForest_1_1QZsolver.html#a10a162d078a948ffc495b351510c5a03',1,'Forest::QZsolver::newMat()'],['../classForest_1_1LUsolver.html#afa7e7e6b50ab91b6fe7bc7ff922cb37d',1,'Forest::LUsolver::newMat()']]],
+  ['np',['np',['../classForest_1_1QuadratureChebyshevLegendre.html#a671f7191da631b320a4c899a14552ef1',1,'Forest::QuadratureChebyshevLegendre']]]
+];

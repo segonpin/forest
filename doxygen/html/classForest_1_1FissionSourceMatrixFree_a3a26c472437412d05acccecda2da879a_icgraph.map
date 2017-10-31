@@ -1,0 +1,4 @@
+<map id="Forest::FissionSourceMatrixFree::ingroup_fission_add" name="Forest::FissionSourceMatrixFree::ingroup_fission_add">
+<area shape="rect" id="node2" href="$classForest_1_1FissionSourceMatrixFree.html#ad78405ec06f6a7e801ce962526ed2c8f" title="Apply the fission operator to phi and add the result to source. " alt="" coords="240,5,427,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1FissionSourceMatrixFree.html#ab8b367d5a3d7eb74f74391a165eddcce" title="Apply the fission operator to phi and store the result in source. " alt="" coords="475,5,661,47"/>
+</map>

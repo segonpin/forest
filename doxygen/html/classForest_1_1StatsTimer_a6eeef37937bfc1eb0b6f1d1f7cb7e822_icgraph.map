@@ -1,0 +1,11 @@
+<map id="Forest::StatsTimer::add" name="Forest::StatsTimer::add">
+<area shape="rect" id="node2" href="$classForest_1_1EqSolverWG.html#ac70deb216726b5b4c947fffe094b885f" title="Forest::EqSolverWG\l::EqSolverWG" alt="" coords="420,5,563,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1StatsTimer.html#abcea4c84eefef9cc2c98cd57a390db3a" title="Instance. " alt="" coords="213,195,344,236"/>
+<area shape="rect" id="node5" href="$classForest_1_1PostProcessing.html#aef87898bf3877ab41d559dec1df72279" title="Constructor. " alt="" coords="412,71,571,112"/>
+<area shape="rect" id="node6" href="$classForest_1_1EigenSolver.html#ae869465250b775f03cbb85e8f63715e0" title="Power iteration method for the eigenvalue problem. " alt="" coords="423,136,560,177"/>
+<area shape="rect" id="node7" href="$classForest_1_1ProbGeom.html#a9c95bdc6bc072680e7ffa194c5819c6f" title="Constructor. " alt="" coords="392,253,591,279"/>
+<area shape="rect" id="node8" href="$classForest_1_1EigenSolver.html#a5f20adb120812ba9472aa4c7bfdaa746" title="Solve the eigenvalue problem with SLEPc, by default using the Krylov&#45;Schur method. " alt="" coords="423,304,560,345"/>
+<area shape="rect" id="node9" href="$classForest_1_1SolverEq.html#aabe0c203470687cc03d62b8fc7c41f73" title="Forest::SolverEq::SolverEq" alt="" coords="401,370,582,397"/>
+<area shape="rect" id="node10" href="$classForest_1_1State.html#a109df8214621387381d2d53c7302b01c" title="Constructor. " alt="" coords="423,421,560,447"/>
+<area shape="rect" id="node4" href="$namespaceForest.html#ad25979e16feb55a22cd8d3a43a7cf37f" title="Forest::finish_forest" alt="" coords="422,202,561,229"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Forest::Homogenization::assembly_homogenization" name="Forest::Homogenization::assembly_homogenization">
+<area shape="rect" id="node2" href="$classForest_1_1Homogenization.html#a6fa7c98d690b813f0fbf730fc68403bc" title="Homogenize at pin level. " alt="" coords="237,5,399,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1Homogenization.html#a69c566e4767b8471a80bfe758fab27f7" title="Homogenize at pin level. " alt="" coords="237,71,399,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1Homogenization.html#a70d3673030fad98ce6aded160aea48c8" title="Homogenize at pin level. " alt="" coords="237,136,399,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1XS__single.html#aed35c77d8d29631f4b86ad543e12406c" title="Calculates diff[g] from 1/(.3*sigmat[g]). " alt="" coords="447,71,581,112"/>
+<area shape="rect" id="node6" href="$classForest_1_1XS__single.html#af6dae5d47161f64e8c75bc9565e0edad" title="Calculates sigmaa[g] from sigmat[g] &#45; sigmas[g][:]. " alt="" coords="447,136,581,177"/>
+<area shape="rect" id="node7" href="$classForest_1_1XS__single.html#a018b4a6c066a090589f6211f319a815a" title="Calculates sigmar[g] from sigmaa[g] + sigmas[g][1:g&#45;1,g+1:]. " alt="" coords="447,201,581,243"/>
+</map>

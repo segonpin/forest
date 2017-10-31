@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Input Data &mdash; Forest 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/forest_small.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Forest 0.1 documentation" href="../index.html"/>
+        <link rel="up" title="User Guide" href="userguide.html"/>
+        <link rel="next" title="Output Results" href="output.html"/>
+        <link rel="prev" title="User Guide" href="userguide.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Forest
+          
+
+          
+            
+            <img src="../_static/forest_icon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../methods/index.html">Methods</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="userguide.html">User Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Input Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#problem-geometry">Problem geometry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-materials">Problem materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solver-settings">Solver Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="output.html">Output Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devguide.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doxygen/api.html">FOREST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info.html">Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foresttodo.html">Forest todo list</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Forest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="userguide.html">User Guide</a> &raquo;</li>
+      
+    <li>Input Data</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/userguide/input.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="input-data">
+<span id="input"></span><h1><a class="toc-backref" href="#id2">Input Data</a><a class="headerlink" href="#input-data" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#input-data" id="id2">Input Data</a><ul>
+<li><a class="reference internal" href="#problem-geometry" id="id3">Problem geometry</a></li>
+<li><a class="reference internal" href="#problem-materials" id="id4">Problem materials</a></li>
+<li><a class="reference internal" href="#solver-settings" id="id5">Solver Settings</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<img src="../_images/graphviz-9f13f6ba3626334904891d6587d41a21a8371b48.png" alt="digraph G
+{
+  graph[bgcolor=&quot;transparent&quot;];
+  rankdir=TB;
+  compound=true;
+  edge [fontname=&quot;FreeSans&quot;,fontsize=15,labelfontname=&quot;FreeSans&quot;,labelfontsize=10];
+  node [fontname=&quot;FreeSans&quot;,fontsize=15,
+  shape=record,height=0.2,width=0.4,
+  color=&quot;black&quot;, fillcolor=&quot;white&quot;, style=&quot;filled&quot;];
+  subgraph cluster0
+  {
+    style=&quot;rounded,filled&quot;; color=lightgrey;
+    {
+      rank=same;
+      INsolver [label=&quot;Solver Settings&quot;];
+      INprob [label=&quot;Problem Data&quot;];
+    }
+    URL=&quot;\ref input&quot;;
+    label=&quot;Input Data&quot;
+  }
+}" usemap="#G" />
+<map id="G" name="G">
+<area shape="rect" id="clust1" href="\ref input" title="Input Data" alt="" coords="16,16,359,103"/>
+</map>
+<p>We have different input files summarized as:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Solver Settings (*.settings.xml) to be decided by the user.</li>
+<li>Problem Data (*.geom.xml and *.mat.xml) defining the benchmark.</li>
+</ul>
+</div></blockquote>
+<p>The main reason for splitting the information in several files
+is the encapsulation of information. A detailed explanation of
+each one of the files follows below.</p>
+<div class="section" id="problem-geometry">
+<h2><a class="toc-backref" href="#id3">Problem geometry</a><a class="headerlink" href="#problem-geometry" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id1">
+<a class="reference internal image-reference" href="userguide/../../img/geom_cascade.png"><img alt="userguide/../../img/geom_cascade.png" src="userguide/../../img/geom_cascade.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Cascade of scales for geometry definition</span></p>
+</div>
+<p>The description is inside the block “geometry”, which also defines the
+dimension of the problem,</p>
+<blockquote>
+<div><div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;geometry</span> <span class="na">dim=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+  ....
+<span class="nt">&lt;/geometry&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Inside this module we have to specify the geometrical configuration of
+the problem through several modules defining a hierarchy of scales
+by setting:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">The <strong>core</strong> module, consisting on</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;core</span> <span class="na">composed=</span><span class="s">&quot;true&quot;</span> <span class="na">name=</span><span class="s">&quot;mini core&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nnodes&gt;</span> 1 1 <span class="nt">&lt;/nnodes&gt;</span> <span class="c">&lt;!-- xnodes ynodes znodes --&gt;</span>
+  <span class="nt">&lt;length&gt;</span>
+    42.84; <span class="c">&lt;!-- X- X+ AXIS --&gt;</span>
+    21.42; <span class="c">&lt;!-- Y- Y+ AXIS --&gt;</span>
+  <span class="nt">&lt;/length&gt;</span>
+  <span class="nt">&lt;components&gt;</span> <span class="c">&lt;!-- LAT or BOX or PCNW PCNE PCSW PCSE --&gt;</span>
+    0;
+  <span class="nt">&lt;/components&gt;</span>
+  <span class="nt">&lt;boundary&gt;</span> <span class="c">&lt;!-- ALB or VOID or REFL --&gt;</span>
+    2 2 2 2; <span class="c">&lt;!-- X- X+ Y- Y+ --&gt;</span>
+  <span class="nt">&lt;/boundary&gt;</span>
+<span class="nt">&lt;/core&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>name: name of the reactor. Optional.</li>
+<li>dimension: spatial dimension of the problem.</li>
+<li>nnodes: number of nodes in each axial direction,
+where nodes refer to assemblies.</li>
+<li>length: length of the nodes in the specific axis.</li>
+<li>components: The id of the assembly that defines each node at the
+next level.</li>
+<li>boundary: label setting the type of boundary condition for each
+boundary, with 0=VOID, 2=REFLECTIVE.</li>
+</ul>
+</li>
+<li><p class="first">The <strong>lattices</strong> module (optional), defining the geometry of each
+assembly, which depending on each assembly type consists of:</p>
+<ul>
+<li><p class="first"><strong>grid</strong> type: id,[name,]nnodes,components,type,length</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;lattice</span> <span class="na">id=</span><span class="s">&quot;0&quot;</span> <span class="na">type=</span><span class="s">&quot;grid&quot;</span> <span class="na">name=</span><span class="s">&quot;assembly&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nnodes&gt;</span> 8 8 <span class="nt">&lt;/nnodes&gt;</span> <span class="c">&lt;!-- xnodes ynodes znodes --&gt;</span>
+  <span class="nt">&lt;components&gt;</span> <span class="c">&lt;!-- PIN or BOX or PCNW PCNE PCSW PCSE --&gt;</span>
+    0 0 0 0 0 0 0 0;
+    0 1 0 1 1 0 1 0;
+    0 0 0 0 0 0 0 0;
+    0 1 0 1 1 0 1 0;
+    0 1 0 1 1 0 1 0;
+    0 0 0 0 0 0 0 0;
+    0 1 0 1 1 0 1 0;
+    0 0 0 0 0 0 0 0;
+  <span class="nt">&lt;/components&gt;</span>
+  <span class="nt">&lt;length&gt;</span>
+    2.7 2.4 2.7 1.2 1.2 2.7 2.4 2.7; <span class="c">&lt;!-- X- X+ AXIS --&gt;</span>
+    2.7 2.4 2.7 1.2 1.2 2.7 2.4 2.7; <span class="c">&lt;!-- Y- Y+ AXIS --&gt;</span>
+  <span class="nt">&lt;/length&gt;</span>
+<span class="nt">&lt;/lattice&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>id: where should we use this lattice inside the core composition.</li>
+<li>name: name of the assembly. Optional.</li>
+<li>nnodes: number of nodes in each axial direction.</li>
+<li>components: The id identifying each node at the next level.</li>
+<li>type: the way we define the assembly</li>
+<li>length: length of the nodes in the specific axis.</li>
+</ul>
+</li>
+<li><p class="first"><strong>pin_map</strong> type: id,[name,]nnodes,components,type,water_gap,pitch</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;lattice</span> <span class="na">id=</span><span class="s">&quot;0&quot;</span> <span class="na">type=</span><span class="s">&quot;pin_map&quot;</span> <span class="na">name=</span><span class="s">&quot;moderator assembly&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nnodes&gt;</span> 2 1 <span class="nt">&lt;/nnodes&gt;</span> <span class="c">&lt;!-- xnodes ynodes znodes --&gt;</span>
+  <span class="nt">&lt;components&gt;</span> <span class="c">&lt;!-- PIN or BOX or PCNW PCNE PCSW PCSE --&gt;</span>
+    1 0;
+  <span class="nt">&lt;/components&gt;</span>
+  <span class="nt">&lt;pitch&gt;</span>21.42<span class="nt">&lt;/pitch&gt;</span>
+<span class="nt">&lt;/lattice&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>id: where should we use this lattice inside the core composition.</li>
+<li>name: name of the assembly. Optional.</li>
+<li>nnodes: number of nodes in each axial direction.</li>
+<li>components: The id identifying each node at the next level.</li>
+<li>type: the way we define the assembly</li>
+<li>pitch: length of node along each axis (one number if square node).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">The <strong>pins</strong> module (optional), defining the geometry of each pin,
+which depending on each type of pin consists on:</p>
+<ul>
+<li><p class="first"><strong>box</strong> type: [name, ] materials (material id for the pin)</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;pin</span> <span class="na">id=</span><span class="s">&quot;0&quot;</span> <span class="na">type=</span><span class="s">&quot;box&quot;</span> <span class="na">name=</span><span class="s">&quot;moderator&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;materials&gt;</span>0;<span class="nt">&lt;/materials&gt;</span>
+<span class="nt">&lt;/pin&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>pin</strong> type: [name, ] materials (out/inner materials id),
+fuel_radius</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;pin</span> <span class="na">id=</span><span class="s">&quot;1&quot;</span> <span class="na">type=</span><span class="s">&quot;pin&quot;</span> <span class="na">name=</span><span class="s">&quot;fuel-cladding mixture&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;fuel_radius&gt;</span>9.18<span class="nt">&lt;/fuel_radius&gt;</span>
+  <span class="nt">&lt;materials&gt;</span>0 1;<span class="nt">&lt;/materials&gt;</span>
+<span class="nt">&lt;/pin&gt;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p>As an example we can show the following file:</p>
+</div>
+<div class="section" id="problem-materials">
+<h2><a class="toc-backref" href="#id4">Problem materials</a><a class="headerlink" href="#problem-materials" title="Permalink to this headline">¶</a></h2>
+<p>As an example we can show the following file:</p>
+</div>
+<div class="section" id="solver-settings">
+<h2><a class="toc-backref" href="#id5">Solver Settings</a><a class="headerlink" href="#solver-settings" title="Permalink to this headline">¶</a></h2>
+<p>As an example we can show the following file:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Different input files should be used for the different physics,
+maybe sharing the geometric information, so the *.geom file can
+be split in two in the future, one part with the geometric
+information and other one with the material data, so the geometric
+information can be used also for the thermal-hydraulic module.
+Another option is to include the thermal-hydraulic properties
+in the *.geom file. Still have to decide about that.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="output.html" class="btn btn-neutral float-right" title="Output Results" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="userguide.html" class="btn btn-neutral" title="User Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Sebastian Gonzalez-Pintor.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

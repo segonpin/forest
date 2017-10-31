@@ -1,0 +1,14 @@
+<map id="Forest::QuadratureGaussChebyshev::QuadratureGaussChebyshev" name="Forest::QuadratureGaussChebyshev::QuadratureGaussChebyshev">
+<area shape="rect" id="node2" href="$classForest_1_1QuadratureGaussChebyshev.html#a1f74df37c9f1a396df5d25b05ee2b6bb" title="Forest::QuadratureGaussChebyshev\l::set_ordinates" alt="" coords="288,37,523,79"/>
+<area shape="rect" id="node5" href="$classForest_1_1QuadratureBase.html#a12c5effa530ef0927871993de0ad0c88" title="Forest::QuadratureBase\l::set_a_order" alt="" coords="325,103,486,144"/>
+<area shape="rect" id="node6" href="$classForest_1_1QuadratureBase.html#adaba56f00b9c550b993f9c76e58f8cd6" title="Forest::QuadratureBase\l::set_p_order" alt="" coords="325,168,486,209"/>
+<area shape="rect" id="node7" href="$classForest_1_1QuadratureBase.html#acaf6a1a2170017b69839dc8c61ad9f7b" title="Forest::QuadratureBase\l::set_order" alt="" coords="325,233,486,275"/>
+<area shape="rect" id="node8" href="$classForest_1_1QuadratureBase.html#aa164ae3a3abfd9669197552cea0322fe" title="Forest::QuadratureBase\l::set_n_leg_moments" alt="" coords="325,299,486,340"/>
+<area shape="rect" id="node9" href="$classForest_1_1QuadratureBase.html#a403d6468ddc469d59ed3627bd6c5fd94" title="Forest::QuadratureBase\l::set_all_angles" alt="" coords="325,364,486,405"/>
+<area shape="rect" id="node11" href="$classForest_1_1QuadratureGaussChebyshev.html#a66ee0e1f078dc7850687ae3bdeac0c98" title="Forest::QuadratureGaussChebyshev\l::get_dimension_weight" alt="" coords="288,429,523,471"/>
+<area shape="rect" id="node12" href="$classForest_1_1QuadratureBase.html#ace596c049216e626004057f7bf9590bc" title="j_ord = bc_map(f, i_ord), with " alt="" coords="325,495,486,536"/>
+<area shape="rect" id="node13" href="$classForest_1_1QuadratureBase.html#ab5cbea1a03c7fc0b5503ebbdeeab9120" title="j_ord = bc_map(f, i_ord), with " alt="" coords="325,560,486,601"/>
+<area shape="rect" id="node3" href="$classForest_1_1QuadratureGaussChebyshev.html#af7ec8743d150432c554384b18a0281cb" title="Hardcoding several values for the discrete ordinates generation. " alt="" coords="571,5,805,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1QuadratureGaussChebyshev.html#af9c3500b6d2f07c93bdbffed3e358548" title="S_2 weight distribution {1};. " alt="" coords="571,71,805,112"/>
+<area shape="rect" id="node10" href="$classForest_1_1QuadratureBase.html#a5fea5a6eba6622600aa6beeed9ad9ca9" title="Return cardinal angle index. " alt="" coords="607,364,769,405"/>
+</map>

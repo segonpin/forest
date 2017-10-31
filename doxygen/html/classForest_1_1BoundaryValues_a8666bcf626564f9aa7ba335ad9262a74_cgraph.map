@@ -1,0 +1,5 @@
+<map id="Forest::BoundaryValues::init" name="Forest::BoundaryValues::init">
+<area shape="rect" id="node2" href="$classForest_1_1BoundaryValues.html#a10ea25aaae629a54d139efe08446e58e" title="Collect the albedo faces for direction i_ord. " alt="" coords="216,5,379,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1BoundaryValues.html#a7663664c05d831ca86c3e0c99f6f1271" title="Collect the albedo faces for direction i_ord. " alt="" coords="216,71,379,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1BoundaryValues.html#ae1b3e901a3367f63eaef282c144d822e" title="Forest::BoundaryValues\l::set_global_to_bc_data" alt="" coords="216,136,379,177"/>
+</map>

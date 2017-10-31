@@ -1,0 +1,24 @@
+<map id="/home/lns/Codes/forest&#45;public/mylib/src/algebra/eq_diffusion.cc" name="/home/lns/Codes/forest&#45;public/mylib/src/algebra/eq_diffusion.cc">
+<area shape="rect" id="node2" href="$eq__diffusion_8h.html" title="EqDiffusion class template declarations. " alt="" coords="1278,117,1427,143"/>
+<area shape="rect" id="node8" href="$sn__vector_8h.html" title="SnVector class template declarations. " alt="" coords="1595,295,1731,322"/>
+<area shape="rect" id="node13" href="$forest__utils__memory_8h.html" title="utils/forest_utils\l_memory.h" alt="" coords="2427,288,2542,329"/>
+<area shape="rect" id="node16" href="$diff__factory_8h.html" title="DiffFactory class template declarations. " alt="" coords="423,206,586,233"/>
+<area shape="rect" id="node17" href="$diff__op_8h.html" title="DiffOp class template declarations. " alt="" coords="12,117,148,143"/>
+<area shape="rect" id="node18" href="$fission__source__factory_8h.html" title="FissionSourceFactory class template declarations. " alt="" coords="565,109,692,151"/>
+<area shape="rect" id="node20" href="$fission__spectrum__factory_8h.html" title="FissionSpectrumFactory class template declarations. " alt="" coords="310,109,451,151"/>
+<area shape="rect" id="node22" href="$scattering__factory_8h.html" title="ScatteringFactory class template declarations. " alt="" coords="872,109,1014,151"/>
+<area shape="rect" id="node24" href="$state_8h.html" title="State class template declarations. " alt="" coords="2174,117,2301,143"/>
+<area shape="rect" id="node30" href="$input_8h.html" title="Input class template declarations. " alt="" coords="1890,206,1983,233"/>
+<area shape="rect" id="node3" href="$equation_8h.html" title="Equation class template declarations. " alt="" coords="1082,206,1210,233"/>
+<area shape="rect" id="node7" href="$solver__eq_8h.html" title="SolverEq, EqSolverWG and EqPrec class template declarations. " alt="" coords="1285,206,1420,233"/>
+<area shape="rect" id="node9" href="$state__fwd_8h.html" title="State class forward declarations. " alt="" coords="603,295,758,322"/>
+<area shape="rect" id="node4" href="$sn__vector__fwd_8h.html" title="SnVector class forward declarations. " alt="" coords="153,295,317,322"/>
+<area shape="rect" id="node19" href="$fission__source_8h.html" title="FissionSource class template declarations. " alt="" coords="173,199,297,240"/>
+<area shape="rect" id="node21" href="$fission__spectrum_8h.html" title="FissionSpectrum class template declarations. " alt="" coords="25,199,149,240"/>
+<area shape="rect" id="node23" href="$scattering__source_8h.html" title="ScatteringSource class template declarations. " alt="" coords="712,199,854,240"/>
+<area shape="rect" id="node25" href="$input__fwd_8h.html" title="Input class forward declarations. " alt="" coords="2341,206,2462,233"/>
+<area shape="rect" id="node26" href="$prob__geom__fwd_8h.html" title="ProbGeom class forward declarations. " alt="" coords="2487,199,2631,240"/>
+<area shape="rect" id="node31" href="$input__geom_8h.html" title="InputGeom class template declarations. " alt="" coords="2270,295,2402,322"/>
+<area shape="rect" id="node32" href="$input__mat_8h.html" title="InputMat class template declarations. " alt="" coords="2123,295,2246,322"/>
+<area shape="rect" id="node33" href="$input__settings_8h.html" title="InputSettings class template declarations. " alt="" coords="1806,295,1952,322"/>
+</map>

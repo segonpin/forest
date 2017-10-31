@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developer Guide &mdash; Forest 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/forest_small.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Forest 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Tutorial programs" href="tutorial.html"/>
+        <link rel="prev" title="Examples" href="../userguide/examples.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Forest
+          
+
+          
+            
+            <img src="../_static/forest_icon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../methods/index.html">Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/userguide.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html">Tutorial programs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../doxygen/api.html">FOREST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info.html">Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foresttodo.html">Forest todo list</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Forest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Developer Guide</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/devguide/devguide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="developer-guide">
+<span id="devguide"></span><h1>Developer Guide<a class="headerlink" href="#developer-guide" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial programs</a></li>
+</ul>
+</div>
+<p>We provide an overview for the developers about the hierarchy followed
+by the different abstract modules. The blocks are grouped by different
+levels or interfaces:</p>
+<blockquote>
+<div><ul class="simple">
+<li>“User’s interface”: requiring no knowledge of programming</li>
+<li>“Programmer’s interface”: requiring some knowledge of programming and
+basic knowledge of the methods used, this is the level that should be
+modified or extended in order to add or change particular capabilities.</li>
+<li>“Low level interface”: Here we find the libraries used to facilitate
+the development of the previous block. These are advances libraries which
+are not intended to be modified, but that can be used in order to add
+state of the art algorithms and solvers implemented in the future in
+these libraries.</li>
+</ul>
+</div></blockquote>
+<img src="../_images/graphviz-47a3bf0c942177c814ca4812d1a410bb2276d619.png" alt="digraph G
+{
+  graph[bgcolor=&quot;transparent&quot;];
+  rankdir=TB;
+  compound=true;
+  edge [fontname=&quot;FreeSans&quot;,fontsize=15,labelfontname=&quot;FreeSans&quot;,labelfontsize=10];
+  node [fontname=&quot;FreeSans&quot;,fontsize=15,
+  shape=record,height=0.2,width=0.4,
+  color=&quot;black&quot;, fillcolor=&quot;white&quot;, style=&quot;filled&quot;];
+  subgraph cluster0
+  {
+    style=rounded; color=gold;
+    subgraph cluster1
+    {
+      style=&quot;rounded,filled&quot;; color=lightgrey;
+      {
+        INsolver [label=&quot;Solver Settings&quot;];
+        INprob [label=&quot;Problem Data&quot;];
+      }
+      URL=&quot;&quot;;
+      label=&quot;Input Data&quot;
+    }
+    subgraph cluster2
+    {
+      style=&quot;rounded,filled&quot;; color=lightgrey;
+      {
+        OUTgraph [label=&quot;Graphical Output&quot;];
+        OUTdata [label=&quot;Data Output&quot;];
+      }
+      URL=&quot;&quot;;
+      label=&quot;Output Results&quot;;
+    }
+    #URL=&quot;&quot;;
+    label = &quot;User's Interface&quot;;
+  }
+  subgraph cluster3
+  {
+    style=rounded; color=gold;
+    subgraph cluster4
+    {
+      style=&quot;rounded,filled&quot;; color=yellowgreen;
+      {
+        rank=same;
+        PROBsource [label=&quot;Source Problem&quot;];
+        PROBeigen [label=&quot;Eigenvalue Problem&quot;];
+      }
+      URL=&quot;&quot;;
+      label=&quot;Problems&quot;;
+    }
+    subgraph cluster5
+    {
+      style=&quot;rounded,filled&quot;; color=skyblue;
+      EQsolver [label=&quot;Linear Solver&quot;];
+      {node[shape=none, width=0, height=0, label=&quot;&quot;] solver0 };
+      {node[shape=none, width=0, height=0, label=&quot;&quot;] solver1 };
+      EIGsolver [label=&quot;Eigenvalue Solver&quot;];
+      URL=&quot;&quot;;
+      label = &quot;Algebra&quot;;
+    }
+    subgraph cluster6
+    {
+      style=&quot;rounded,filled&quot;; color=skyblue;
+      LATT [label=&quot;Lattice&quot;];
+      HOM [label=&quot;Homogenization&quot;];
+      REC [label=&quot;Reconstruction&quot;];
+      CORE [label=&quot;Core&quot;];
+      URL=&quot;&quot;;
+      label = &quot;Physical Operators&quot;;
+    }
+    label = &quot;Programmer's Interface&quot;;
+  }
+  subgraph cluster7
+  {
+    style=rounded; color=gold;
+    subgraph cluster8
+    {
+      style=&quot;rounded,filled&quot;; color=orange;
+      {
+        DEALII [label=&quot;Deal.II&quot;];
+      }
+      URL=&quot;&quot;;
+      label=&quot;Modelling&quot;;
+    }
+    subgraph cluster9
+    {
+      style=&quot;rounded,filled&quot;; color=orange;
+      {
+      rank=same;
+      PETSc [label=&quot;PETSc&quot;];
+      SLEPc [label=&quot;SLEPc&quot;];
+      }
+      URL=&quot;&quot;;
+      label = &quot;Algebra&quot;;
+    }
+    label = &quot;Low level Interface&quot;;
+  }
+  {edge[style=invis] {INsolver -&gt; INprob} };
+  {edge[style=invis] {OUTgraph -&gt; OUTdata} };
+  {edge[style=invis] {INprob -&gt; PROBsource} };
+  {edge[style=invis] {OUTdata -&gt; PROBeigen} };
+  {edge[style=invis] {PROBsource -&gt; EQsolver} };
+  {edge[style=invis] {PROBeigen -&gt; LATT} };
+  {edge[style=invis] {LATT -&gt; HOM -&gt; REC -&gt; CORE} };
+  {edge[style=invis] {EQsolver -&gt; solver0 -&gt; solver1 -&gt; EIGsolver} };
+  {edge[style=invis] {CORE -&gt; DEALII} };
+  {edge[style=invis] {EIGsolver -&gt; SLEPc -&gt; PETSc} };
+}" />
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="Tutorial programs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../userguide/examples.html" class="btn btn-neutral" title="Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Sebastian Gonzalez-Pintor.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

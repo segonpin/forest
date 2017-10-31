@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classForest_1_1Equation.html" title="Equation, base class. " alt="" coords="5,46,168,73"/>
+<area shape="rect" id="node2" href="$classForest_1_1EqDiffusion.html" title="Neutron diffusion equation. " alt="" coords="218,5,353,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1EqTransport.html" title="Neutron transport equation. " alt="" coords="216,71,355,112"/>
+</map>

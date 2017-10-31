@@ -1,0 +1,32 @@
+<map id="Forest::ProbGeom::ProbGeom" name="Forest::ProbGeom::ProbGeom">
+<area shape="rect" id="node2" href="$namespaceForest.html#ab001ef46e8c4c41182d48068c4764985" title="Print msg indenting indent_times. " alt="" coords="277,5,423,32"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputSettings.html#ae5ea8e4f299158da4beacbc94fa28401" title="Forest::InputSettings\l::get_n_ref" alt="" coords="278,57,422,98"/>
+<area shape="rect" id="node4" href="$classForest_1_1ProbGeom.html#acf903f33418ce2c865ff955c65d43624" title="It calculates a correction factor such that the area of the pin with radius r approximated by a polyg..." alt="" coords="269,122,431,163"/>
+<area shape="rect" id="node5" href="$classForest_1_1RealCore.html#af8b281357d1f2882d31a2bfc9d75609e" title="Forest::RealCore::get\l_n_assemblies" alt="" coords="276,187,424,229"/>
+<area shape="rect" id="node6" href="$classForest_1_1RealCore.html#aa9350332f99dedac41ed51ff02953d50" title="Forest::RealCore::get\l_n_pins" alt="" coords="276,253,424,294"/>
+<area shape="rect" id="node7" href="$classForest_1_1RealCore.html#a87815af26783a5160cdb68b870f8694d" title="Forest::RealCore::get\l_pins_to_assembly" alt="" coords="276,318,424,359"/>
+<area shape="rect" id="node8" href="$classForest_1_1RealCore.html#aa426149fe75633261d73b7267fc2054d" title="Forest::RealCore::get\l_pins_per_assembly" alt="" coords="276,383,424,425"/>
+<area shape="rect" id="node9" href="$classForest_1_1RealCore.html#aee2607a79c64ddf97a354d3a52f4e273" title="Forest::RealCore::build_mesh" alt="" coords="252,449,448,476"/>
+<area shape="rect" id="node11" href="$classForest_1_1ProbGeom.html#a19356c582df1b4cd261d9149b425bbac" title="Attach the manifold to the mesh and refine it. " alt="" coords="273,501,427,542"/>
+<area shape="rect" id="node12" href="$classForest_1_1ProbGeom.html#a90a1cba8092ae21e7cd6aab7c9257c0a" title="Forest::ProbGeom::refine\l_assembly" alt="" coords="265,566,435,607"/>
+<area shape="rect" id="node13" href="$classForest_1_1ProbGeom.html#a0d5cf1d7d2944f0b8fd5a13878921194" title="assign user_index (per pin) for the output of the power per pin " alt="" coords="263,631,437,673"/>
+<area shape="rect" id="node14" href="$classForest_1_1ProbGeom.html#a39dcb7277256afe72d6c4c7581091ee5" title="Set boundary indicators. " alt="" coords="273,697,427,738"/>
+<area shape="rect" id="node15" href="$classForest_1_1ProbGeom.html#a8344eabab6a03ba43e3b684abd7e16f6" title="Forest::ProbGeom::set\l_map_pin_index" alt="" coords="273,762,427,803"/>
+<area shape="rect" id="node16" href="$classForest_1_1InputSettings.html#a67fa93a17d550ed2a621055f3b1340f6" title="Forest::InputSettings\l::get_print_mesh_flag" alt="" coords="277,827,423,869"/>
+<area shape="rect" id="node17" href="$classForest_1_1ProbGeom.html#ad823b7896eb673ce7ca1110f565a8d73" title="We print the mesh. " alt="" coords="269,893,431,934"/>
+<area shape="rect" id="node18" href="$classForest_1_1InputSettings.html#a003d667a702b8b8654ec03af15bda1af" title="Forest::InputSettings\l::get_file_mesheps" alt="" coords="278,958,422,999"/>
+<area shape="rect" id="node19" href="$classForest_1_1ProbGeom.html#a8f347665175958fb1cdd9fc7f1faadab" title="We print the mesh. " alt="" coords="269,1023,431,1065"/>
+<area shape="rect" id="node20" href="$classForest_1_1InputSettings.html#a6a8716aadb54ef5f6218b4c3eaf93bfb" title="Forest::InputSettings\l::get_file_meshvtk" alt="" coords="278,1089,422,1130"/>
+<area shape="rect" id="node21" href="$classForest_1_1ProbGeom.html#a7d9efb2878f2ad89e4fce9f87bfd188e" title="For the moment we use all cells the same == 1, otherwise == 0. " alt="" coords="273,1154,427,1195"/>
+<area shape="rect" id="node22" href="$classForest_1_1StatsTimer.html#abcea4c84eefef9cc2c98cd57a390db3a" title="Instance. " alt="" coords="285,1271,415,1313"/>
+<area shape="rect" id="node23" href="$classForest_1_1StatsTimer.html#a6eeef37937bfc1eb0b6f1d1f7cb7e822" title="add " alt="" coords="503,1152,663,1179"/>
+<area shape="rect" id="node27" href="$classForest_1_1StatsMemory.html#a5eb587b9a801cb0c550cbbddf4683a9e" title="instance " alt="" coords="277,1393,423,1434"/>
+<area shape="rect" id="node28" href="$classForest_1_1StatsMemory.html#a606d8a3997ebe17f80942fb446ee521c" title="add " alt="" coords="496,1400,671,1427"/>
+<area shape="rect" id="node31" href="$classForest_1_1ProbGeom.html#a57ef6523d28c7b69698627bcd6642745" title="Forest::ProbGeom::memory\l_consumption" alt="" coords="258,1458,442,1499"/>
+<area shape="rect" id="node10" href="$namespacedealii_1_1GridGenerator.html#a068981c50e861035c06933a902bb24d5" title="Overload of the function merge_triangulation to deal with a vector of triangulations (not just two)..." alt="" coords="508,442,659,483"/>
+<area shape="rect" id="node24" href="$classForest_1_1StatsTimer.html#aef24c161a85651b197734742c0ca8422" title="add_final " alt="" coords="518,1203,649,1245"/>
+<area shape="rect" id="node25" href="$classForest_1_1StatsTimer.html#a10a05da97b74c5c209fe7836d68d1f95" title="print_detailed " alt="" coords="518,1269,649,1310"/>
+<area shape="rect" id="node26" href="$classForest_1_1StatsTimer.html#ac516bc136543c5798062c3af6a4f787d" title="get_total " alt="" coords="518,1334,649,1375"/>
+<area shape="rect" id="node29" href="$classForest_1_1StatsMemory.html#a11ffb64d73b6ba087eda89b3700a1636" title="print_detailed " alt="" coords="511,1451,656,1493"/>
+<area shape="rect" id="node30" href="$classForest_1_1StatsMemory.html#a7924e0b4d364500be0663a1cd1caafc4" title="get_total " alt="" coords="511,1517,656,1558"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Forest::InputSettings::set_problem" name="Forest::InputSettings::set_problem">
+<area shape="rect" id="node2" href="$classForest_1_1InputProblem.html#acefcf315fed6341165686af54bea1b42" title="Forest::InputProblem::set" alt="" coords="197,46,368,73"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputFiles.html#aa8656ade03727643d8c4815ed59fbb22" title="Read the names of the input files from a xml tree, and save it. " alt="" coords="416,5,540,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1InputFiles.html#ab94addf995bb36620294a9bd135f728d" title="Write the content of the files in a xml tree. " alt="" coords="416,71,540,112"/>
+</map>

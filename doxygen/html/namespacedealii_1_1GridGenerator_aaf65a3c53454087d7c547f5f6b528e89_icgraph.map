@@ -1,0 +1,5 @@
+<map id="dealii::GridGenerator::pin_cell2" name="dealii::GridGenerator::pin_cell2">
+<area shape="rect" id="node2" href="$classForest_1_1RealPin.html#ab2654bbfc5a9795d378d84f31368ec42" title="Build a Triangulation&lt;dim&gt; object for this pin. " alt="" coords="195,5,381,32"/>
+<area shape="rect" id="node3" href="$namespacedealii_1_1GridGenerator.html#a80acea963d6f26c5fce747f81a1391d9" title="dealii::GridGenerator\l::pin_box" alt="" coords="217,57,359,98"/>
+<area shape="rect" id="node4" href="$namespacedealii_1_1GridGenerator.html#aec55cd13538ca7e47e6d477115f8f9d9" title="dealii::GridGenerator\l::pin_cell2" alt="" coords="217,122,359,163"/>
+</map>

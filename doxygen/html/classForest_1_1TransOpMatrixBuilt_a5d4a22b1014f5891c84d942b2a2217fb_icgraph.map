@@ -1,0 +1,9 @@
+<map id="Forest::TransOpMatrixBuilt::get_n_angles" name="Forest::TransOpMatrixBuilt::get_n_angles">
+<area shape="rect" id="node2" href="$classForest_1_1TransOpMatrixBuilt.html#aa5c4d6f6e73f382c16659e37c641b119" title="Forest::TransOpMatrixBuilt\l::build_prec_matrix" alt="" coords="235,51,414,93"/>
+<area shape="rect" id="node4" href="$classForest_1_1TransOpMatrixBuilt.html#aece046b655a3be622f1a8e7d9a3059af" title="Constructor. " alt="" coords="692,55,871,97"/>
+<area shape="rect" id="node5" href="$classForest_1_1TransOpMatrixBuilt.html#aadcd5a94d91255083408fefa4e16511e" title="Forest::TransOpMatrixBuilt\l::build_trans_matrix" alt="" coords="235,117,414,158"/>
+<area shape="rect" id="node6" href="$classForest_1_1TransOpMatrixBuilt.html#aac62f8fbdcc09fe4507264ad7da9267d" title="Returns object memory consumption. " alt="" coords="235,182,414,223"/>
+<area shape="rect" id="node7" href="$classForest_1_1TransOpMatrixBuilt.html#af30edaf407584da9c96d590c15713785" title="Forest::TransOpMatrixBuilt\l::setup_angular_dof_handler" alt="" coords="232,247,417,289"/>
+<area shape="rect" id="node8" href="$classForest_1_1TransOpMatrixBuilt.html#a489f2796d3a801a5f589b2ff1f7acf42" title="Forest::TransOpMatrixBuilt\l::setup_system" alt="" coords="235,313,414,354"/>
+<area shape="rect" id="node3" href="$classForest_1_1TransOpMatrixBuilt.html#a03586f6852c85da26bfc0dca5b6513c1" title="Build all the matrices and preconditioners. " alt="" coords="465,117,644,158"/>
+</map>

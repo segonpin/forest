@@ -1,0 +1,3 @@
+<map id="dealii::InterGridMapSebas&lt; GridClass &gt;" name="dealii::InterGridMapSebas&lt; GridClass &gt;">
+<area shape="rect" id="node3" href="$classdealii_1_1InterGridMapSebas.html" title="{dealii::InterGridMapSebas\l\&lt; dealii::DoFHandler\&lt; dim,\l dim \&gt; \&gt;\n|&#45; mapping\l&#45; source_grid\l&#45; destination_grid\l|+ InterGridMapSebas()\l+ make_mapping()\l+ operator[]()\l+ clear()\l+ get_source_grid()\l+ get_destination_grid()\l+ memory_consumption()\l+ DeclException1()\l+ DeclException0()\l&#45; set_mapping()\l&#45; set_entries_to_cell()\l}" alt="" coords="5,477,184,760"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Forest::EqSolverWG::EqSolverWG" name="Forest::EqSolverWG::EqSolverWG">
+<area shape="rect" id="node2" href="$classForest_1_1StatsTimer.html#abcea4c84eefef9cc2c98cd57a390db3a" title="Instance. " alt="" coords="210,122,341,163"/>
+<area shape="rect" id="node3" href="$classForest_1_1StatsTimer.html#a6eeef37937bfc1eb0b6f1d1f7cb7e822" title="add " alt="" coords="410,5,570,32"/>
+<area shape="rect" id="node7" href="$classForest_1_1StatsMemory.html#a5eb587b9a801cb0c550cbbddf4683a9e" title="instance " alt="" coords="203,275,348,317"/>
+<area shape="rect" id="node8" href="$classForest_1_1StatsMemory.html#a606d8a3997ebe17f80942fb446ee521c" title="add " alt="" coords="403,253,577,280"/>
+<area shape="rect" id="node11" href="$classForest_1_1EqSolverWG.html#a735f7b060f85ade1344fcefc7f97dfe4" title="Return the memory consumption of the vectors of this class. " alt="" coords="196,341,355,382"/>
+<area shape="rect" id="node4" href="$classForest_1_1StatsTimer.html#aef24c161a85651b197734742c0ca8422" title="add_final " alt="" coords="425,57,555,98"/>
+<area shape="rect" id="node5" href="$classForest_1_1StatsTimer.html#a10a05da97b74c5c209fe7836d68d1f95" title="print_detailed " alt="" coords="425,122,555,163"/>
+<area shape="rect" id="node6" href="$classForest_1_1StatsTimer.html#ac516bc136543c5798062c3af6a4f787d" title="get_total " alt="" coords="425,187,555,229"/>
+<area shape="rect" id="node9" href="$classForest_1_1StatsMemory.html#a11ffb64d73b6ba087eda89b3700a1636" title="print_detailed " alt="" coords="417,305,563,346"/>
+<area shape="rect" id="node10" href="$classForest_1_1StatsMemory.html#a7924e0b4d364500be0663a1cd1caafc4" title="get_total " alt="" coords="417,370,563,411"/>
+</map>

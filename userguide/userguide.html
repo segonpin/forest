@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Guide &mdash; Forest 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/forest_small.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Forest 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Input Data" href="input.html"/>
+        <link rel="prev" title="Notation and nomenclature" href="../methods/notation.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Forest
+          
+
+          
+            
+            <img src="../_static/forest_icon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../methods/index.html">Methods</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="input.html">Input Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html">Output Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devguide.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doxygen/api.html">FOREST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info.html">Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foresttodo.html">Forest todo list</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Forest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>User Guide</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/userguide/userguide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-guide">
+<span id="userguide"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="input.html">Input Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="input.html#problem-geometry">Problem geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="input.html#problem-materials">Problem materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="input.html#solver-settings">Solver Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="output.html">Output Results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="output.html#standard-output">Standard output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html#data-output">Data output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output.html#graphical-output">Graphical output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#how-to-run-the-software">How to run the software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#test-suite">Test-suite</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The following graph represent the work-flow of the library, with more
+detailed information about each module by clicking the graph.</p>
+<img src="../_images/graphviz-271694cd99483c77a7f3c1479af1dd7e97e58367.png" alt="digraph G {
+  graph[bgcolor=&quot;transparent&quot;];
+  rankdir=TB;
+  compound=true;
+  edge [fontname=&quot;FreeSans&quot;,fontsize=15,labelfontname=&quot;FreeSans&quot;,labelfontsize=10];
+  node [fontname=&quot;FreeSans&quot;,fontsize=15,
+  shape=record,height=0.2,width=0.4,
+  color=&quot;black&quot;, fillcolor=&quot;white&quot;, style=&quot;filled&quot;];
+  subgraph cluster0
+  {
+    style=&quot;rounded,filled&quot;; color=lightgrey;
+    {
+      rank=same;
+      INsolver [label=&quot;Solver Settings&quot;];
+      INprob [label=&quot;Problem Data&quot;];
+    }
+    URL=&quot;input.html&quot;;
+    label=&quot;Input Data&quot;
+  }
+  subgraph cluster
+  {
+    style=rounded; color=gold;
+    subgraph cluster1
+    {
+      style=&quot;rounded,filled&quot;; color=skyblue;
+      TPF [label=&quot;Two Phase Flow&quot;];
+      {node[shape=none, width=0, height=0, label=&quot;&quot;] pi };
+      HTE [label=&quot;Heat Transfer&quot;];
+      URL=&quot;../methods/thermalhydraulics.html&quot;;
+      label = &quot;Thermal-Hydraulics&quot;;
+    }
+    subgraph cluster2
+    {
+      style=&quot;rounded,filled&quot;; color=orange;
+      LATT [label=&quot;Lattice&quot;];
+      {
+        rank=same;
+        HOM [label=&quot;Homogenization&quot;];
+        REC [label=&quot;Reconstruction&quot;];
+      }
+      CORE [label=&quot;Core&quot;];
+      URL=&quot;../methods/neutronics.html&quot;;
+      label = &quot;Neutronics&quot;;
+    }
+    URL=&quot;../methods/multiphysics.html&quot;;
+    label = &quot;Multi-Physics&quot;;
+  }
+  subgraph cluster3
+  {
+    style=&quot;rounded,filled&quot;; color=yellowgreen;
+    {
+      rank=same;
+      OUTgraph [label=&quot;Graphical Output&quot;];
+      OUTdata [label=&quot;Data Output&quot;];
+    }
+    URL=&quot;output.html&quot;;
+    label=&quot;Output Results&quot;;
+  }
+  {edge[style=invis] {TPF -&gt; pi -&gt; HTE} };
+  HTE -&gt; TPF [constraint = false];
+  {node[shape=none, width=0, height=0, label=&quot;&quot;] IN};
+  {edge[style=invis] {INsolver -&gt; IN -&gt; TPF} };
+  {edge[style=invis] {INprob -&gt; IN -&gt; LATT} };
+  INsolver -&gt; TPF [ltail=cluster0, lhead=cluster];
+  INprob -&gt; LATT [ltail=cluster0, lhead=cluster];
+  LATT -&gt; HOM -&gt; CORE;
+  {edge[style=invis] LATT -&gt; REC -&gt; CORE };
+  CORE -&gt; REC -&gt; LATT [constraint = false];
+  CORE -&gt; HTE [constraint = false];
+  TPF -&gt; LATT [constraint = false];
+  {node[shape=none, width=0, height=0, label=&quot;&quot;] OUT };
+  {edge[style=invis] {CORE -&gt; OUT -&gt; OUTdata} };
+  {edge[style=invis] {HTE -&gt; OUT -&gt; OUTgraph} };
+  CORE -&gt; OUTdata [ltail=cluster, lhead=cluster3];
+  HTE -&gt; OUTgraph [ltail=cluster, lhead=cluster3];
+}" usemap="#G" />
+<map id="G" name="G">
+<area shape="rect" id="clust1" href="input.html" title="Input Data" alt="" coords="47,16,389,103"/>
+<area shape="rect" id="clust4" href="../methods/thermalhydraulics.html" title="Thermal&#45;Hydraulics" alt="" coords="27,193,216,445"/>
+<area shape="rect" id="clust6" href="../methods/neutronics.html" title="Neutronics" alt="" coords="227,193,592,445"/>
+<area shape="rect" id="clust3" href="../methods/multiphysics.html" title="Multi&#45;Physics" alt="" coords="16,152,603,456"/>
+<area shape="rect" id="clust8" href="output.html" title="Output Results" alt="" coords="43,495,392,581"/>
+</map>
+<p>Brief explanation of each module:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Input<ul>
+<li><strong>Problem data</strong>: The data defining the problem to be solved.</li>
+<li><strong>Solver settings</strong>: The parameters used by the numerical methods to solve the
+problem (tolerances,  maximum number of iterations,  etc).</li>
+</ul>
+</li>
+<li>Neutronics<ul>
+<li><strong>Core</strong>: Approximation of the neutron flux inside  the reactor core (modeled
+for example with the neutron diffusion equation).</li>
+<li><strong>Lattice</strong>: Approximation of the neutron flux inside an assembly (modeled for
+example with the neutron transport equation).</li>
+<li><strong>Homogenization</strong>: This procedure is used to homogenize and condense the cross
+sections from the Lattice problem to be solved with a lower order operator.</li>
+<li><strong>Reconstruction</strong>: Reconstructing a detailed solution of the neutron flux from
+the coarse mesh solution.</li>
+</ul>
+</li>
+<li>Thermal-Hydraulics<ul>
+<li><strong>Heat transfer</strong>: Here we calculate the heat that will reach the moderator taking
+into account the power generated inside the fuel.</li>
+<li><strong>Two Phase Flow</strong>: This module solves the thermal-hydraulics for the given problem
+using the heat provided by the heat transfer equation.</li>
+</ul>
+</li>
+<li>Output<ul>
+<li><strong>Data output</strong>: Data related to the solution.</li>
+<li><strong>Graphical output</strong>: vtk file used to plot the solution (for example with Paraview).</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="input.html" class="btn btn-neutral float-right" title="Input Data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../methods/notation.html" class="btn btn-neutral" title="Notation and nomenclature" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Sebastian Gonzalez-Pintor.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

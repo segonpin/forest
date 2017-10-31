@@ -1,0 +1,6 @@
+<map id="Forest::Lattice::set" name="Forest::Lattice::set">
+<area shape="rect" id="node2" href="$classForest_1_1Core.html#a99f52b8096369841318f3893e9733d47" title="assigning n_nodes (for dimensions higher than dim it is filled with 1&#39;s) " alt="" coords="217,5,352,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1Core.html#a7d352654d2c77b4090103cb589980281" title="Forest::Core::set_components" alt="" coords="185,71,384,98"/>
+<area shape="rect" id="node5" href="$classForest_1_1Core.html#ad97b078d7ce3db38efc83b675dc393e7" title="Forest::Core::set_length" alt="" coords="203,122,366,149"/>
+<area shape="rect" id="node3" href="$namespaceForest.html#aaf59771c22c8737b7f9e84c9c0c96b08" title="Forest::string_to_vector" alt="" coords="432,71,592,98"/>
+</map>

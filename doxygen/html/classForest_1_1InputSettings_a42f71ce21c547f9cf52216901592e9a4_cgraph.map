@@ -1,0 +1,8 @@
+<map id="Forest::InputSettings::load_xml" name="Forest::InputSettings::load_xml">
+<area shape="rect" id="node2" href="$classForest_1_1InputFiles.html#aa8656ade03727643d8c4815ed59fbb22" title="Read the names of the input files from a xml tree, and save it. " alt="" coords="216,5,340,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputOutput.html#a2a8f3e13d8d640750f62cc6327ddae52" title="Forest::InputOutput\l::read_xml" alt="" coords="211,71,345,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1InputProblem.html#aaed8501a58f2d51af780c49cea3f3e8d" title="Forest::InputProblem\l::read_xml" alt="" coords="206,136,350,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1InputAlgebra.html#a4449525ab1b1235143eac6c315b88130" title="Forest::InputAlgebra\l::read_xml" alt="" coords="208,201,348,243"/>
+<area shape="rect" id="node7" href="$classForest_1_1InputFESettings.html#a418debaec87b99ae3025932d87024364" title="Forest::InputFESettings\l::read_xml" alt="" coords="197,267,359,308"/>
+<area shape="rect" id="node6" href="$namespaceForest.html#a596696da23d990adfde89fd8ce00800f" title="Convert a string to a unsigned int. " alt="" coords="407,201,556,243"/>
+</map>

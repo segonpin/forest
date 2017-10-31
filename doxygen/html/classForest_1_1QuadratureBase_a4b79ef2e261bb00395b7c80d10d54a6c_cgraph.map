@@ -1,0 +1,7 @@
+<map id="Forest::QuadratureBase::QuadratureBase" name="Forest::QuadratureBase::QuadratureBase">
+<area shape="rect" id="node2" href="$classForest_1_1QuadratureBase.html#aff1279f6c9781d907343d61c87a37c8d" title="Forest::QuadratureBase\l::set_n_octants" alt="" coords="215,5,376,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1QuadratureBase.html#a4517d035f2fb6ea7bcc6949a489bd75d" title="Forest::QuadratureBase\l::set_n_angles" alt="" coords="215,71,376,112"/>
+<area shape="rect" id="node6" href="$classForest_1_1QuadratureBase.html#aef165a5dbaefa38e85266781e8c65f27" title="Assigning the signs for each octant. " alt="" coords="215,136,376,177"/>
+<area shape="rect" id="node4" href="$classForest_1_1QuadratureBase.html#a79caa556c2579d316c50263a5d18016b" title="Forest::QuadratureBase\l::get_n_angles_per_octant" alt="" coords="424,39,599,80"/>
+<area shape="rect" id="node5" href="$classForest_1_1QuadratureBase.html#ab2351017ed58fc2785fa1d6e2602d475" title="Forest::QuadratureBase\l::get_n_octants" alt="" coords="431,104,592,145"/>
+</map>

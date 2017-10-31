@@ -1,0 +1,474 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Neutronics &mdash; Forest 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/forest_small.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Forest 0.1 documentation" href="../index.html"/>
+        <link rel="up" title="Methods" href="index.html"/>
+        <link rel="next" title="Thermal-Hydraulics" href="thermalhydraulics.html"/>
+        <link rel="prev" title="Methods" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Forest
+          
+
+          
+            
+            <img src="../_static/forest_icon.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Methods</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Neutronics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-equations">The equations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#time-dependent-neutron-transport-equation">Time dependent neutron transport equation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#steady-state-neutron-transport-equation">Steady state neutron transport equation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#energy-discretization-and-scattering-simplification">Energy discretization and scattering simplification</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#neutron-diffusion-equation">Neutron diffusion equation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#different-spatial-scales">Different spatial scales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#core">Core</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lattice">Lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#homogenization">Homogenization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reconstruction">Reconstruction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="thermalhydraulics.html">Thermal-Hydraulics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notation.html">Notation and nomenclature</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/userguide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devguide/devguide.html">Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doxygen/api.html">FOREST API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../info.html">Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../foresttodo.html">Forest todo list</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Forest</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Methods</a> &raquo;</li>
+      
+    <li>Neutronics</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/methods/neutronics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="neutronics">
+<span id="id1"></span><h1><a class="toc-backref" href="#id4">Neutronics</a><a class="headerlink" href="#neutronics" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#neutronics" id="id4">Neutronics</a><ul>
+<li><a class="reference internal" href="#the-equations" id="id5">The equations</a><ul>
+<li><a class="reference internal" href="#time-dependent-neutron-transport-equation" id="id6">Time dependent neutron transport equation</a></li>
+<li><a class="reference internal" href="#steady-state-neutron-transport-equation" id="id7">Steady state neutron transport equation</a></li>
+<li><a class="reference internal" href="#energy-discretization-and-scattering-simplification" id="id8">Energy discretization and scattering simplification</a></li>
+<li><a class="reference internal" href="#neutron-diffusion-equation" id="id9">Neutron diffusion equation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#different-spatial-scales" id="id10">Different spatial scales</a><ul>
+<li><a class="reference internal" href="#core" id="id11">Core</a></li>
+<li><a class="reference internal" href="#lattice" id="id12">Lattice</a></li>
+<li><a class="reference internal" href="#homogenization" id="id13">Homogenization</a></li>
+<li><a class="reference internal" href="#reconstruction" id="id14">Reconstruction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<img src="../_images/graphviz-8fb1a3b73e6c33b1af4d6d20ab1fa015d962551e.png" alt="digraph G
+{
+  graph[bgcolor=&quot;transparent&quot;];
+  rankdir=TB;
+  compound=true;
+  edge [fontname=&quot;FreeSans&quot;,fontsize=15,labelfontname=&quot;FreeSans&quot;,labelfontsize=10];
+  node [fontname=&quot;FreeSans&quot;,fontsize=15,
+  shape=record,height=0.2,width=0.4,
+  color=&quot;black&quot;, fillcolor=&quot;white&quot;, style=&quot;filled&quot;];
+  subgraph cluster2
+  {
+    style=&quot;rounded,filled&quot;; color=orange;
+    LATT [label=&quot;Lattice&quot;];
+    {
+      rank=same;
+      HOM [label=&quot;Homogenization&quot;];
+      REC [label=&quot;Reconstruction&quot;];
+    }
+    CORE [label=&quot;Core&quot;];
+    label = &quot;Neutronics&quot;;
+  }
+  LATT -&gt; HOM -&gt; CORE;
+  {edge[style=invis] LATT -&gt; REC -&gt; CORE };
+  CORE -&gt; REC -&gt; LATT [constraint = false];
+}" />
+<div class="section" id="the-equations">
+<h2><a class="toc-backref" href="#id5">The equations</a><a class="headerlink" href="#the-equations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="time-dependent-neutron-transport-equation">
+<h3><a class="toc-backref" href="#id6">Time dependent neutron transport equation</a><a class="headerlink" href="#time-dependent-neutron-transport-equation" title="Permalink to this headline">¶</a></h3>
+<p>The time dependent neutron transport equation has the following form
+(Numerical solution of the time dependent neutron transport equation
+by the method of the characteristics, Journal of Computational Physics
+Volume 240, 1 May 2013, Pages 248–267)</p>
+<div class="math">
+<p><img src="../_images/math/4929c3168872c26c3eb461a2ae2c85a294fadde3.png" alt="\begin{align*}
+ \frac{1}{v(E)} \frac{\partial}{\partial t} \Psi(\mathbf{r},\Omega,E,t) +
+ \Omega \cdot \nabla \Psi(\mathbf{r},\Omega,E,t) +
+ \Sigma_{T}(\mathbf{r},E,t) \Psi(\mathbf{r},\Omega,E,t)
+ = Q(\mathbf{r},\Omega,E,t)
+ \end{align*}"/></p>
+</div><p>where <img class="math" src="../_images/math/7b1816c51f7d31275cd3ad400208fb7b3ce136a0.png" alt="Q"/> is the total source (including fission, scattering,
+and delayed neutrons) defined by</p>
+<div class="math">
+<p><img src="../_images/math/df9607d7766af15aa78e61294b8158e789dbc756.png" alt="\begin{align*}
+ Q(\mathbf{r},\Omega,E,t)
+ &amp; = \int_{(4\pi)}\int_0^{\infty}
+ \Sigma_{s}(\mathbf{r},\Omega^{\prime}\to\Omega,E^{\prime}\to E,t)
+ \Psi(\mathbf{r},\Omega^{\prime},E^{\prime},t)
+ d\Omega^{\prime} dE^{\prime} \nonumber \\
+ &amp; + \frac{\chi^{p}(\mathbf{r},E,t)}{4\pi}\int_{0}^{\infty}
+ \left(1-\sum_{q=0}^{N_{q}-1}\beta_q(\mathbf{r},E^{\prime},t)\right)
+ \nu(E^\prime)\Sigma_{f}(\mathbf{r},E^{\prime},t)
+ \Phi(\mathbf{r},E^{\prime},t) dE^{\prime} \nonumber \\
+ &amp; + \sum_{q=0}^{N_q-1}\chi^{d}_q (\mathbf{r},E,t)
+ \lambda_q C_q(\mathbf{r},t)
+ \end{align*}"/></p>
+</div><p>with the equations for the delayed neutron precursors</p>
+<div class="math">
+<p><img src="../_images/math/a2fcb9fdfa1d2f9137a31a4637b384e2960e03d5.png" alt="\begin{align*}
+ \frac{\partial}{\partial t} C_q(\mathbf{r},t)
+ = -\lambda_{q} C_q(\mathbf{r},t)
+ + \frac{1}{4\pi}\int_{0}^{\infty}\beta_q(\mathbf{r},E^{\prime},t)
+ \nu(E^\prime)\Sigma_{f}(\mathbf{r},E^{\prime},t)
+ \Phi(\mathbf{r},E^{\prime},t) dE^{\prime}
+ \end{align*}"/></p>
+</div><p>which still requires appropriate boundary conditions in order to be solved.</p>
+</div>
+<div class="section" id="steady-state-neutron-transport-equation">
+<h3><a class="toc-backref" href="#id7">Steady state neutron transport equation</a><a class="headerlink" href="#steady-state-neutron-transport-equation" title="Permalink to this headline">¶</a></h3>
+<p>The equations describing the steady state of the system, of capital
+importance in nuclear reactor calculations, are obtained after setting
+the time derivatives equal to zero and introducing the delayed neutron
+precursors equations, as follows</p>
+<div class="math">
+<p><img src="../_images/math/0c49663e10b96c99bc450fb3f015019ef7fc19ab.png" alt="\begin{align*}
+ \Omega \cdot \nabla \Psi(\mathbf{r},\Omega,E) +
+ \Sigma_{T}(\mathbf{r},E) \Psi(\mathbf{r},\Omega,E) = Q(\mathbf{r},\Omega,E)
+ \end{align*}"/></p>
+</div><p>where <img class="math" src="../_images/math/7b1816c51f7d31275cd3ad400208fb7b3ce136a0.png" alt="Q"/> is the total source (including fission, scattering,
+and delayed neutrons) defined by</p>
+<div class="math">
+<p><img src="../_images/math/b3e57925570af6353b7330462d8cc932d7bdc6d4.png" alt="\begin{align*}
+ Q(\mathbf{r},\Omega,E)
+ &amp; = \int_{(4\pi)}\int_0^{\infty}\Sigma_{s}(\mathbf{r},\Omega^{\prime}\to\Omega,E^{\prime}\to E)
+ \Psi(\mathbf{r},\Omega^{\prime},E^{\prime}) d\Omega^{\prime} dE^{\prime} \nonumber \\
+ &amp; + \frac{1}{\lambda}\frac{\chi(\mathbf{r},E)}{4\pi}\int_{0}^{\infty}
+ \nu(E^\prime)\Sigma_{f}(\mathbf{r},E^{\prime})
+ \Phi(\mathbf{r},E^{\prime}) dE^{\prime}
+ \end{align*}"/></p>
+</div><p>where the fission term has been divided by <img class="math" src="../_images/math/1ab0134b6e0837594649c75a2ed83cfd85a2d03d.png" alt="\lambda"/>, known as the
+multiplication factor, being the largest eigenvalue of the system.
+We can write the previous equation in operators notation, as follows</p>
+<div class="math">
+<p><img src="../_images/math/9aaba9a8d79db955736df72adab5c0fa03e6d622.png" alt="\begin{align*}
+ \mathcal{L} \Psi
+ = \mathcal{S} \Psi + \frac{1}{\lambda}\chi\mathcal{F} \Phi
+ \end{align*}"/></p>
+</div></div>
+<div class="section" id="energy-discretization-and-scattering-simplification">
+<h3><a class="toc-backref" href="#id8">Energy discretization and scattering simplification</a><a class="headerlink" href="#energy-discretization-and-scattering-simplification" title="Permalink to this headline">¶</a></h3>
+<p>Next we assume that the fission spectrum does not depends on the
+position and that the scattering cross section depends only on the
+angle between the incident neutron and the exiting neutron.
+Then we discretize the equation in energy by choosing a set of energy
+bins and integrating over them, weighting with a proper shape function
+for the energy dependent flux, <img class="math" src="../_images/math/0cadb51dd048827abf375df182f8a2b5891e9ae5.png" alt="f(E)"/>, to obtain</p>
+<div class="math">
+<p><img src="../_images/math/1e886d81c20b5a1c24a138672803cef8678c0588.png" alt="\begin{align*}
+ &amp; \Omega \cdot \nabla \Psi_g(\mathbf{r},\Omega) +
+ \Sigma_{T,g}(\mathbf{r}) \Psi_g(\mathbf{r},\Omega)  \nonumber \\
+ &amp; = \sum_{h=0}^{G-1}\int_{4\pi}\Sigma_{s,h\to g}(\mathbf{r},\Omega^{\prime}\cdot \Omega)
+ \Psi_{h}(\mathbf{r},\Omega^{\prime}) d \Omega^{\prime}
+ + \frac{1}{\lambda}\chi_g(\mathbf{r})\frac{1}{4\pi}\sum_{h=0}^{G-1}
+ \nu\Sigma_{f,h}(\mathbf{r})
+ \Phi_h(\mathbf{r}) \nonumber \\
+ &amp; = \sum_{h=0}^{G-1}\sum_{l=0}^{\infty}\frac{2l+1}{4\pi}\Sigma_{s,l,h\to g}(\mathbf{r})
+ \sum_{m=-l}^{l}\Phi_{lm,h}(\mathbf{r}) Y_{l,m}(\Omega)
+ + \frac{1}{\lambda}\chi_g(\mathbf{r})\frac{1}{4\pi}\sum_{h=0}^{G-1}
+ \nu\Sigma_{f,h}(\mathbf{r})
+ \Phi_h(\mathbf{r})
+ \end{align*}"/></p>
+</div><p>Which will be written, for every energy group,</p>
+<div class="math">
+<p><img src="../_images/math/012995f8e365085826b4040d6490ba56e00c63d4.png" alt="\begin{align*}
+ \mathcal{L}_{g,g} \Psi_g
+ = \sum_{h=0}^{G-1} \mathcal{M}\mathcal{S}_{g,h}\mathcal{D} \Psi_h
+ + \frac{1}{\lambda}\chi_g\sum_{h=0}^{G-1}\mathcal{F}_h \Phi_h
+ \end{align*}"/></p>
+</div><p>Next we consider isotropic scattering in order to simplify the derivations,
+thus obtaining</p>
+<div class="math">
+<p><img src="../_images/math/92aee9ae1562961fe2285c39a7660f48ed886e37.png" alt="\begin{align*}
+ &amp; \Omega \cdot \nabla \Psi_g(\mathbf{r},\Omega)
+ + \Sigma_{T,g}(\mathbf{r}) \Psi_g(\mathbf{r},\Omega)  \nonumber \\
+ &amp; = \frac{1}{4\pi} \sum_{h=0}^{G-1}\Sigma_{s0,h\to g}(\mathbf{r}) \Phi_{h}(\mathbf{r})
+ + \frac{1}{\lambda}\chi_g(\mathbf{r})\frac{1}{4\pi}\sum_{h=0}^{G-1}
+ \nu\Sigma_{f,h}(\mathbf{r})
+ \Phi_h(\mathbf{r})
+ \end{align*}"/></p>
+</div></div>
+<div class="section" id="neutron-diffusion-equation">
+<h3><a class="toc-backref" href="#id9">Neutron diffusion equation</a><a class="headerlink" href="#neutron-diffusion-equation" title="Permalink to this headline">¶</a></h3>
+<p>The previous equation, using asymptotic analysis
+(Larsen, Edward W., J. E. Morel, and Warren F. Miller.
+“Asymptotic solutions of numerical transport problems
+in optically thick, diffusive regimes.”
+Journal of Computational Physics 69.2 (1987): 283-324.),
+when we are close to the optically thick, diffusive regimes,</p>
+<div class="math">
+<p><img src="../_images/math/df2e25662d783e7068fc189cf8d602ae8f5e6c8c.png" alt="\begin{align*}
+ &amp; - \nabla \frac{1}{3\Sigma_{T,g}(\mathbf{r})} \nabla \Phi_g(\mathbf{r})
+ + \Sigma_{T,g}(\mathbf{r}) \Phi_g(\mathbf{r})  \nonumber \\
+ &amp; = \frac{1}{4\pi} \sum_{h=0}^{G-1}
+ \Sigma_{s0,h\to g}(\mathbf{r}) \Phi_{h}(\mathbf{r})
+ + \frac{1}{\lambda}\chi_g(\mathbf{r})\frac{1}{4\pi}\sum_{h=0}^{G-1}
+ \nu\Sigma_{f,h}(\mathbf{r})
+ \Phi_h(\mathbf{r})
+ \end{align*}"/></p>
+</div><p>or using the diffusion coefficient and the absorption cross section</p>
+<div class="math">
+<p><img src="../_images/math/d3a7382407c55d445759bd6fda213c8f60ccf2ae.png" alt="\begin{align*}
+ &amp; - \nabla D_{g}(\mathbf{r}) \nabla \Phi_g(\mathbf{r})
+ + \Sigma_{a,g}(\mathbf{r}) \Phi_g(\mathbf{r})  \nonumber \\
+ &amp; = \frac{1}{4\pi} \sum_{h=0,h\neq g}^{G-1}
+ \Sigma_{s0,h\to g}(\mathbf{r}) \Phi_{h}(\mathbf{r})
+ + \frac{1}{\lambda}\chi_g(\mathbf{r})\frac{1}{4\pi}\sum_{h=0}^{G-1}
+ \nu\Sigma_{f,h}(\mathbf{r})
+ \Phi_h(\mathbf{r})
+ \end{align*}"/></p>
+</div></div>
+</div>
+<div class="section" id="different-spatial-scales">
+<h2><a class="toc-backref" href="#id10">Different spatial scales</a><a class="headerlink" href="#different-spatial-scales" title="Permalink to this headline">¶</a></h2>
+<p>Different actors participate in this module, being <strong>Core</strong> and
+<strong>Lattice</strong> the main ones, while <strong>Homogenization</strong> and
+<strong>Reconstruction</strong> are the way they talk with each other.</p>
+<div class="section" id="core">
+<h3><a class="toc-backref" href="#id11">Core</a><a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h3>
+<p>The target geometry in this module is the following one:</p>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="methods/../../img/bwr_core_detail.png"><img alt="methods/../../img/bwr_core_detail.png" src="methods/../../img/bwr_core_detail.png" style="width: 30%;" /></a>
+<p class="caption"><span class="caption-text">BWR core</span></p>
+</div>
+</div>
+<div class="section" id="lattice">
+<h3><a class="toc-backref" href="#id12">Lattice</a><a class="headerlink" href="#lattice" title="Permalink to this headline">¶</a></h3>
+<p>The target geometry in this module is the following one:</p>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="methods/../../img/modelled_fuel_bundle.png"><img alt="methods/../../img/modelled_fuel_bundle.png" src="methods/../../img/modelled_fuel_bundle.png" style="width: 30%;" /></a>
+<p class="caption"><span class="caption-text">Modeled fuel bundle</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Change in the nature of the PDE, from a hyperbolic behavior
+in materials with small scattering ratio,
+<img class="math" src="../_images/math/bdeb1a5776f0b27e962df20cfa8931eb3613504e.png" alt="c = \frac{\Sigma_s}{\Sigma_t} \ll 1"/> to an elliptic behavior for
+highly diffusive materials, <img class="math" src="../_images/math/e2bc7c35e12edc7273ad5c2c2c46599b01494f07.png" alt="c \approx 1"/>. (hp?)</p>
+</div>
+</div>
+<div class="section" id="homogenization">
+<h3><a class="toc-backref" href="#id13">Homogenization</a><a class="headerlink" href="#homogenization" title="Permalink to this headline">¶</a></h3>
+<p>This module uses the data from the <strong>Lattice</strong> module and collapse and
+condense it using the already calculated solution over this geometry,
+to generate the data (cross-sections and discontinuity factors) for the
+next calculation with the <strong>Core</strong> module.</p>
+</div>
+<div class="section" id="reconstruction">
+<h3><a class="toc-backref" href="#id14">Reconstruction</a><a class="headerlink" href="#reconstruction" title="Permalink to this headline">¶</a></h3>
+<p>This module uses the solution from the <strong>Core</strong> module to reconstruct the
+boundary conditions to be used in the <strong>Lattice</strong> module.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="thermalhydraulics.html" class="btn btn-neutral float-right" title="Thermal-Hydraulics" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Methods" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Sebastian Gonzalez-Pintor.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

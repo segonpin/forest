@@ -1,0 +1,9 @@
+<map id="Forest::StatsTimer::instance" name="Forest::StatsTimer::instance">
+<area shape="rect" id="node2" href="$classForest_1_1StatsTimer.html#a6eeef37937bfc1eb0b6f1d1f7cb7e822" title="add " alt="" coords="184,5,344,32"/>
+<area shape="rect" id="node3" href="$classForest_1_1StatsTimer.html#aef24c161a85651b197734742c0ca8422" title="add_final " alt="" coords="199,57,329,98"/>
+<area shape="rect" id="node4" href="$classForest_1_1StatsTimer.html#a10a05da97b74c5c209fe7836d68d1f95" title="print_detailed " alt="" coords="199,122,329,163"/>
+<area shape="rect" id="node8" href="$classForest_1_1StatsTimer.html#ac516bc136543c5798062c3af6a4f787d" title="get_total " alt="" coords="199,187,329,229"/>
+<area shape="rect" id="node5" href="$namespaceForest.html#ac39531d2b2384789ebbabf46478a0a0a" title="Print a line by repeating the character in sep. " alt="" coords="395,79,537,105"/>
+<area shape="rect" id="node6" href="$namespaceForest.html#acebaacda85c6cfa78ce45db7dd7b4a27" title="Print title centered end_msg filling empty space with sep. " alt="" coords="394,129,538,156"/>
+<area shape="rect" id="node7" href="$namespaceForest.html#a019f06f3854a3fe5385e5ca7ff99a823" title="Print time statistics message. " alt="" coords="392,180,540,207"/>
+</map>

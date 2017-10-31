@@ -1,0 +1,9 @@
+<map id="Forest::RealCore::build_assemblies" name="Forest::RealCore::build_assemblies">
+<area shape="rect" id="node2" href="$classForest_1_1RealAssembly.html#a7dd0f07e891682dfb23ad5e1f659b6bd" title="Used to initialize the object. " alt="" coords="211,104,363,145"/>
+<area shape="rect" id="node6" href="$classForest_1_1RealAssembly.html#a84fd64abc85605fdab67eb7f704612d5" title="Forest::RealAssembly\l::build_data" alt="" coords="211,201,363,243"/>
+<area shape="rect" id="node3" href="$classForest_1_1RealAssembly.html#af2a090ce74d790c9057697602efcce4c" title="Used to fill the object with data from a Forest::Lattice object. " alt="" coords="411,5,563,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1RealAssembly.html#aea6a35670ced4d739a228cdaa0ca7ff4" title="Set the origin of the assembly to origin. " alt="" coords="411,71,563,112"/>
+<area shape="rect" id="node5" href="$classForest_1_1RealAssembly.html#a28f5d0bc3145310a6f366223b2dde0b4" title="Set the correction factor to correction_factor. " alt="" coords="411,136,563,177"/>
+<area shape="rect" id="node7" href="$classForest_1_1RealAssembly.html#a42bfe65704b15f518d090864d48b0a9f" title="Forest::RealAssembly\l::build_pins" alt="" coords="411,201,563,243"/>
+<area shape="rect" id="node8" href="$classForest_1_1RealAssembly.html#a7ce490f53848e2b0663e731cd527b284" title="Forest::RealAssembly\l::build_additional_data" alt="" coords="411,267,563,308"/>
+</map>

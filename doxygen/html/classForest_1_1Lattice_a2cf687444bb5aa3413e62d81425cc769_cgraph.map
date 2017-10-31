@@ -1,0 +1,5 @@
+<map id="Forest::Lattice::set_n_nodes" name="Forest::Lattice::set_n_nodes">
+<area shape="rect" id="node2" href="$namespaceForest.html#aaf59771c22c8737b7f9e84c9c0c96b08" title="Forest::string_to_vector" alt="" coords="368,13,528,39"/>
+<area shape="rect" id="node4" href="$classForest_1_1Core.html#a99f52b8096369841318f3893e9733d47" title="assigning n_nodes (for dimensions higher than dim it is filled with 1&#39;s) " alt="" coords="185,35,320,76"/>
+<area shape="rect" id="node3" href="$namespaceForest.html#abb918982a606146cffa9875e88994c50" title="Split string into tokens. " alt="" coords="576,13,667,39"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="dealii::GridGenerator::pin_box" name="dealii::GridGenerator::pin_box">
+<area shape="rect" id="node2" href="$namespacedealii_1_1GridGenerator.html#a021556cfb089786d6295ef4b03060c48" title="dealii::GridGenerator\l::pin_box" alt="" coords="199,5,341,47"/>
+<area shape="rect" id="node3" href="$namespacedealii_1_1GridGenerator.html#a5f744d73f4696eb74e2c28a769822673" title="dealii::GridGenerator\l::extrude_triangulation" alt="" coords="195,71,345,112"/>
+<area shape="rect" id="node4" href="$namespacedealii_1_1GridGenerator.html#ab2aa2cd7834c9e656ba5bd83a803bf5a" title="Function to flatten the triangulation. " alt="" coords="199,136,341,177"/>
+<area shape="rect" id="node5" href="$namespacedealii_1_1GridGenerator.html#a068981c50e861035c06933a902bb24d5" title="Overload of the function merge_triangulation to deal with a vector of triangulations (not just two)..." alt="" coords="195,201,345,243"/>
+<area shape="rect" id="node6" href="$namespacedealii_1_1GridGenerator.html#a94e15988eef003dd5b46f8c709d1db49" title="Function to build the mesh for a pin of type PinType::PIN. " alt="" coords="199,267,341,308"/>
+<area shape="rect" id="node7" href="$namespacedealii_1_1GridGenerator.html#aaf65a3c53454087d7c547f5f6b528e89" title="Function to build the mesh for a pin of type PinType::PIN. " alt="" coords="199,332,341,373"/>
+</map>

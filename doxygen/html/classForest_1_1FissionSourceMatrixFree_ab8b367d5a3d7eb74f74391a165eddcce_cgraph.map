@@ -1,0 +1,4 @@
+<map id="Forest::FissionSourceMatrixFree::vmult" name="Forest::FissionSourceMatrixFree::vmult">
+<area shape="rect" id="node2" href="$classForest_1_1FissionSourceMatrixFree.html#ad78405ec06f6a7e801ce962526ed2c8f" title="Apply the fission operator to phi and add the result to source. " alt="" coords="240,5,427,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1FissionSourceMatrixFree.html#a3a26c472437412d05acccecda2da879a" title="calculate the fission source for group g and add it to source " alt="" coords="475,5,661,47"/>
+</map>

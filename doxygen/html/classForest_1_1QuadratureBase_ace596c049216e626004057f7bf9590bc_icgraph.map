@@ -1,0 +1,7 @@
+<map id="Forest::QuadratureBase::set_bc_map" name="Forest::QuadratureBase::set_bc_map">
+<area shape="rect" id="node2" href="$classForest_1_1QuadratureChebyshevLegendre.html#a3bce7112f59db1866841350150226d38" title="Forest::QuadratureChebyshev\lLegendre::QuadratureChebyshevLegendre" alt="" coords="215,5,481,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1QuadratureGaussChebyshev.html#a8feda954d0e6840493a8e7a0cea46460" title="Forest::QuadratureGaussChebyshev\l::QuadratureGaussChebyshev" alt="" coords="231,71,465,112"/>
+<area shape="rect" id="node4" href="$classForest_1_1QuadratureGaussLegendre.html#ab9d70c242dcfa26e12792a9be7544bca" title="Forest::QuadratureGaussLegendre\l::QuadratureGaussLegendre" alt="" coords="237,136,459,177"/>
+<area shape="rect" id="node5" href="$classForest_1_1QuadratureLevelSymType1.html#a48af7ff9c56f33d76ec1eac6c3eaa9ed" title="Forest::QuadratureLevelSym\lType1::QuadratureLevelSymType1" alt="" coords="236,201,460,243"/>
+<area shape="rect" id="node6" href="$classForest_1_1QuadratureLevelSymType2.html#afef042934a3ad14f7475d27bbfacafdd" title="Forest::QuadratureLevelSym\lType2::QuadratureLevelSymType2" alt="" coords="236,267,460,308"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Forest::InputSettings::InputSettings" name="Forest::InputSettings::InputSettings">
+<area shape="rect" id="node2" href="$classForest_1_1InputSettings.html#a42f71ce21c547f9cf52216901592e9a4" title="Once the property tree is created, extract all the information. " alt="" coords="197,136,341,177"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputFiles.html#aa8656ade03727643d8c4815ed59fbb22" title="Read the names of the input files from a xml tree, and save it. " alt="" coords="408,5,532,47"/>
+<area shape="rect" id="node4" href="$classForest_1_1InputOutput.html#a2a8f3e13d8d640750f62cc6327ddae52" title="Forest::InputOutput\l::read_xml" alt="" coords="403,71,537,112"/>
+<area shape="rect" id="node5" href="$classForest_1_1InputProblem.html#aaed8501a58f2d51af780c49cea3f3e8d" title="Forest::InputProblem\l::read_xml" alt="" coords="398,136,542,177"/>
+<area shape="rect" id="node6" href="$classForest_1_1InputAlgebra.html#a4449525ab1b1235143eac6c315b88130" title="Forest::InputAlgebra\l::read_xml" alt="" coords="400,201,540,243"/>
+<area shape="rect" id="node7" href="$classForest_1_1InputFESettings.html#a418debaec87b99ae3025932d87024364" title="Forest::InputFESettings\l::read_xml" alt="" coords="389,267,551,308"/>
+</map>

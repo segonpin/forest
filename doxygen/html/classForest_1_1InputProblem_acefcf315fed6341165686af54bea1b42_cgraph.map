@@ -1,0 +1,4 @@
+<map id="Forest::InputProblem::set" name="Forest::InputProblem::set">
+<area shape="rect" id="node2" href="$classForest_1_1InputFiles.html#aa8656ade03727643d8c4815ed59fbb22" title="Read the names of the input files from a xml tree, and save it. " alt="" coords="224,5,348,47"/>
+<area shape="rect" id="node3" href="$classForest_1_1InputFiles.html#ab94addf995bb36620294a9bd135f728d" title="Write the content of the files in a xml tree. " alt="" coords="224,71,348,112"/>
+</map>
