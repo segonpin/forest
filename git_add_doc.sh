@@ -6,6 +6,9 @@ set -e
 git checkout gh-pages
 cp -r docs/build/html/* .
 cp -r docs/doxygen/html doxygen/
+touch .nojekyll
+
+git add .nojekyll
 git add *.html
 git add searchindex.js
 git add -f _images
