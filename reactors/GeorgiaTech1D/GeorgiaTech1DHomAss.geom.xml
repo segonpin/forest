@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="1">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="GeorgiaTech1DHomAss">
+    <nnodes> 7 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      15.24 15.24 15.24 15.24 15.24 15.24 15.24; <!-- X- X+ AXIS -->
+    </length>
+    <!--<components> 
+      1 2 1 2 1 2 1; 
+    </components><!-- reference is 1.31992 -->
+    <!--<components> 
+      1 3 1 3 1 3 1;
+    </components><!-- reference is 1.12087 -->
+    <components> 
+      0 1 2 3 4 5 6;
+    </components><!-- reference is 1.02185 -->
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 <!-- X- AXIS -->  <!-- X+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="Type0" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        0 0 0 0 0 0;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="1" name="Type1" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        1 1 1 1 1 1;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="2" name="Type2" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        2 2 2 2 2 2;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="3" name="Type3" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        3 3 3 3 3 3;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="4" name="Type4" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        4 4 4 4 4 4;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="5" name="Type5" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        5 5 5 5 5 5;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="6" name="Type6" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        6 6 6 6 6 6;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins></pins>
+
+</geometry>

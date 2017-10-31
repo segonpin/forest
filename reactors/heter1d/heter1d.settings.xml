@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  
+  <!-- 
+
+Seven Regions Heterogeneous 1D Slab
+
+The reference result is keff = 1.16224, and it has 
+been obtained from ONEDANT, using an angular 
+quadrature order of S96, with 500 fine mesh cells
+in each region and a convergence criterion of 
+tol = 1.e-6, as it was reported in: 
+
+M. Capilla,  CF. Talavera,  D. Ginestar,  G. Verdu, 
+"A nodal collocation method for the calculation of
+the lambda modes of the P_L equations";
+Annals of Nuclear Energy, 32,  (2005), 1825-1853.
+
+  -->
+  
+  <!-- input files -->
+  <input_files>
+    <out>heter1d.out.xml</out>
+    <geom>heter1d.geom.xml</geom>
+    <mat>heter1d.mat.xml</mat>
+  </input_files>
+
+  <!-- problem -->
+  <problem type="transport">
+    <quadrature name="GaussLegendre" sn="96" />
+  </problem>  
+  
+  <!-- algebra -->
+  <algebra>
+    <matrix_free>true</matrix_free>
+    <eig_solver type="PI">
+      <tol>1.e-8</tol>
+      <max_it>400</max_it>
+    </eig_solver>
+    <inner_solver type="Krylov">
+      <tol>1.e-9</tol>
+      <max_it>1000</max_it>
+    </inner_solver>
+  </algebra>
+  
+  <!-- finite elements -->
+  <fe_settings degree="3" n_ref="2" />
+  
+</settings>
+
+

@@ -1,0 +1,9 @@
+.. _api:
+
+===========
+FOREST API
+===========
+
+.. raw:: html
+
+  <meta http-equiv="refresh" content="0; url=../doxygen/html/index.html" />

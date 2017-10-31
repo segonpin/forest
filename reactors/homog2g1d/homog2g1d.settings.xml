@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  
+  <!-- 
+    Here we define the different materials associated to the
+    material id specified when defining the geometry 
+  -->
+  
+  <!-- input files -->
+  <input_files>
+    <geom>homog2g1d.geom.xml</geom>
+    <mat>homog2g1d.mat.xml</mat>
+  </input_files>
+
+  <!-- problem -->
+  <problem type="diffusion"></problem>  
+  <!-->
+  <problem type="transport">
+    <quadrature name="GaussLegendre" sn="4" />
+  </problem><!-->
+  
+  <!-- algebra -->
+  <algebra>
+    <matrix_free>true</matrix_free><!-->
+    <eig_solver type="PI" form="FD"><!-->
+    <eig_solver type="PI" form="Standard">
+      <tol>1.e-8</tol>
+      <max_it>400</max_it>
+    </eig_solver>
+    <inner_solver type="Krylov">
+      <tol>1.e-9</tol>
+      <max_it>400</max_it>
+    </inner_solver>
+  </algebra>
+  
+  <!-- finite elements -->
+  <fe_settings degree="2" n_ref="2" />
+  
+</settings>
+
+

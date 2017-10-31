@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="2">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="mini core">
+    <nnodes> 3 3 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      5.0 5.0 5.0; <!-- X- X+ AXIS -->
+      5.0 5.0 5.0; <!-- Y- Y+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      1 2 0;
+      2 1 0;
+      0 0 0;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 0 0 2 <!-- X- AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="moderator assembly" type="pin_map">
+      <nnodes> 5 5 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0 0 0 0 0;
+        0 0 0 0 0;
+        0 0 0 0 0;
+        0 0 0 0 0;
+        0 0 0 0 0;
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1.0 1.0 1.0 1.0 1.0;
+	1.0 1.0 1.0 1.0 1.0;
+      </length> 
+    </lattice>
+    <lattice id="1" name="MOX" type="pin_map">
+      <nnodes> 5 5 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+        1 1 1 1 1;
+        1 1 1 1 1;
+        1 1 1 1 1;
+        1 1 1 1 1;
+        1 1 1 1 1;
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1.0 1.0 1.0 1.0 1.0;
+	1.0 1.0 1.0 1.0 1.0;
+      </length> 
+    </lattice>
+    <lattice id="2" name="UOX" type="pin_map">
+      <nnodes> 5 5 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+        2 2 2 2 2;
+        2 1 2 1 2;
+        2 2 2 2 2;
+        2 1 2 1 2;
+        2 2 2 2 2;
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1.0 1.0 1.0 1.0 1.0;
+	1.0 1.0 1.0 1.0 1.0;
+      </length> 
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins>
+    <pin id="0" name="moderator" type="box"> 
+      <materials>0</materials>
+    </pin>
+    <pin id="1" name="fuel-cladding mixture" type="pin"> 
+      <fuel_radius>0.45</fuel_radius>
+      <materials>0 1</materials>
+    </pin>
+    <pin id="2" name="fuel-cladding mixture" type="pin"> 
+      <materials>0 2</materials>
+      <fuel_radius>0.35</fuel_radius>
+    </pin>
+  </pins>
+  
+</geometry>

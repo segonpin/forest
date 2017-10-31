@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  
+  <!-- 
+    Homogeneous slab 10.0 cm (it can be a 2.0 cm or 10.0 cm slab)
+    The reference for sn = 96 is keff = 0.662951 (2cm slab)
+    The reference for sn = 96 is keff = 2.00193 (10cm slab)
+    This problem is provided in the following paper:
+    
+    M. Capilla,  CF. Talavera,  D. Ginestar,  G. Verdu, 
+    "A nodal collocation method for the calculation of
+    the lambda modes of the P_L equations";
+    Annals of Nuclear Energy, 32,  (2005), 1825-1853.
+  -->
+  
+  <!-- input files -->
+  <input_files>
+    <geom>homog1d.geom.xml</geom>
+    <mat>homog1d.mat.xml</mat>
+  </input_files>
+
+  <!-- output options -->
+  <output>
+    <print_mesh>true</print_mesh>
+    <vtk_power>true</vtk_power>
+    <vtk_flux>true</vtk_flux>
+    <vtk_mat>true</vtk_mat>
+    <homogenize>false</homogenize>
+  </output>
+  
+  <!-- problem -->
+  <problem type="transport" use_dsa="false">
+    <quadrature name="GaussLegendre" sn="96" />
+    <quadrature name="LevelSymType2" sn="2" />
+  </problem>  
+
+  
+  <!-- algebra -->
+  <algebra>
+    <matrix_free>true</matrix_free>
+    <eig_solver type="PI">
+      <tol>1e-08</tol>
+      <max_it>400</max_it>
+    </eig_solver>
+    <inner_solver type="Krylov">
+      <tol>1e-09</tol>
+      <max_it>400</max_it>
+    </inner_solver>
+  </algebra>
+  <fe_settings degree="4" n_ref="2" />
+
+</settings>

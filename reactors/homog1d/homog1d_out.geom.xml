@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<geometry>
+	<core composed="true">
+		<name>mini core</name>
+		<dimension>1</dimension>
+		<nnodes>      1</nnodes>
+		<length>
+			2.00000;
+		</length>
+		<boundary>
+			      0;
+			      0;
+		</boundary>
+	</core>
+	<lattices>
+		<lattice id="0">
+			<name>assembly</name>
+			<nnodes>      5</nnodes>
+			<components>
+				      0       0       0       0       0;
+			</components>
+			<nref>0</nref>
+			<length>
+				0.40000 0.40000 0.40000 0.40000 0.40000;
+			</length>
+		</lattice>
+	</lattices>
+</geometry>

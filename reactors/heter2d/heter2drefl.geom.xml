@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="2">
+  
+  <!-- 
+  benchmark description in *.settings.xml
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="mini core">
+    <dimension> 2 </dimension>
+    <nnodes> 1 1 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      9.0; <!-- X- X+ AXIS -->
+      9.0; <!-- Y- Y+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      0;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      0 2 0 2 <!-- X- AXIS --> <!-- X+ AXIS --> <!-- Y- AXIS --> <!-- Y+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="assembly" type="grid">
+      <nnodes> 4 4 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0 0 0 0;
+        0 1 0 1;
+        0 0 0 0;
+        0 1 0 1;
+      </components>
+      <length> 
+        2.7 2.4 2.7 1.2; <!-- X- X+ AXIS -->
+        2.7 2.4 2.7 1.2; <!-- Y- Y+ AXIS -->
+      </length>
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins></pins>
+
+</geometry>

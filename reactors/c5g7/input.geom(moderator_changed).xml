@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry>
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true">
+    <name>c5g7</name>
+    <dimension> 2 </dimension>
+    <nnodes> 3 3 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      21.42 21.42 21.42; <!-- X- X+ AXIS -->
+      21.42 21.42 21.42; <!-- Y- Y+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      4 3 0;
+      3 4 0;
+      1 1 2;
+    </components>
+    <!--boundary from_file="true"-->
+    <boundary> <!-- ALB or VOID or REFL -->
+      2; <!-- X- AXIS -->
+      0; <!-- X+ AXIS -->
+      2; <!-- Y- AXIS -->
+      0; <!-- Y+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0">
+      <name>moderator assembly</name>
+      <nnodes> 10 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+      </components>
+      <type>grid</type>
+      <water_gap>0. 0. 0. 0.;</water_gap>
+      <length> 
+        0.3 0.3 0.6 0.6 1.2 1.2 1.6 3.2 5.4 7.02; <!-- X- X+ AXIS -->
+        1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26; <!-- Y- Y+ AXIS -->
+      </length> 
+    </lattice>
+    
+    <lattice id="1">
+      <name>moderator assembly</name>
+      <nnodes> 17 10 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+      </components>
+      <type>grid</type>
+      <water_gap>0. 0. 0. 0.;</water_gap>
+      <length> 
+        1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26; <!-- X- X+ AXIS -->
+        0.3 0.3 0.6 0.6 1.2 1.2 1.6 3.2 5.4 7.02; <!-- X- X+ AXIS -->
+      </length> 
+    </lattice>
+        <lattice id="2">
+      <name>moderator assembly</name>
+      <nnodes> 10 10 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+        0  0  0  0  0  0  0  0  0  0;
+      </components>
+      <type>grid</type>
+      <water_gap>0. 0. 0. 0.;</water_gap>
+      <length> 
+        0.3 0.3 0.6 0.6 1.2 1.2 1.6 3.2 5.4 7.02; <!-- X- X+ AXIS -->
+        0.3 0.3 0.6 0.6 1.2 1.2 1.6 3.2 5.4 7.02; <!-- X- X+ AXIS -->
+      </length> 
+    </lattice>
+    
+    <lattice id="3">
+      <name>MOX</name>
+      <nnodes> 17 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+        2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2;
+        2  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  2;
+        2  3  3  3  3  6  3  3  6  3  3  6  3  3  3  3  2;
+        2  3  3  6  3  4  4  4  4  4  4  4  3  6  3  3  2;
+        2  3  3  3  4  4  4  4  4  4  4  4  4  3  3  3  2;
+        2  3  6  4  4  6  4  4  6  4  4  6  4  4  6  3  2;
+        2  3  3  4  4  4  4  4  4  4  4  4  4  4  3  3  2;
+        2  3  3  4  4  4  4  4  4  4  4  4  4  4  3  3  2;
+        2  3  6  4  4  6  4  4  5  4  4  6  4  4  6  3  2;
+        2  3  3  4  4  4  4  4  4  4  4  4  4  4  3  3  2;
+        2  3  3  4  4  4  4  4  4  4  4  4  4  4  3  3  2;
+        2  3  6  4  4  6  4  4  6  4  4  6  4  4  6  3  2;
+        2  3  3  3  4  4  4  4  4  4  4  4  4  3  3  3  2;
+        2  3  3  6  3  4  4  4  4  4  4  4  3  6  3  3  2;
+        2  3  3  3  3  6  3  3  6  3  3  6  3  3  3  3  2;
+        2  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  2;
+        2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2;
+      </components>
+      <type>pin_map</type>
+      <water_gap>0. 0. 0. 0.;</water_gap>
+      <pitch>1.26</pitch> 
+    </lattice>
+    
+    <lattice id="4">
+      <name>UOX</name>
+      <nnodes> 17 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1; 
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  1  1  1  6  1  1  6  1  1  6  1  1  1  1  1;
+        1  1  1  6  1  1  1  1  1  1  1  1  1  6  1  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  6  1  1  6  1  1  6  1  1  6  1  1  6  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  6  1  1  6  1  1  5  1  1  6  1  1  6  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  6  1  1  6  1  1  6  1  1  6  1  1  6  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  1  6  1  1  1  1  1  1  1  1  1  6  1  1  1;
+        1  1  1  1  1  6  1  1  6  1  1  6  1  1  1  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+        1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+      </components>
+      <type>pin_map</type>
+      <water_gap>0. 0. 0. 0.;</water_gap>
+      <pitch>1.26</pitch> 
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins>
+    <pin id="0">
+      <name>moderator</name>
+      <type>box</type> 
+      <materials>0;</materials>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+    <pin id="1">
+      <name>UO2</name>
+      <type>pin</type> 
+      <materials>0 1;</materials>
+      <fuel_radius>0.54</fuel_radius>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+    <pin id="2">
+      <name>MOX4.3</name>
+      <type>pin</type> 
+      <materials>0 2;</materials>
+      <fuel_radius>0.54</fuel_radius>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+    <pin id="3">
+      <name>MOX7.0</name>
+      <type>pin</type> 
+      <materials>0 3;</materials>
+      <fuel_radius>0.54</fuel_radius>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+    <pin id="4">
+      <name>MOX8.7</name>
+      <type>pin</type> 
+      <materials>0 4;</materials>
+      <fuel_radius>0.54</fuel_radius>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+    <pin id="5">
+      <name>fissionchamber</name>
+      <type>pin</type> 
+      <materials>0 5;</materials>
+      <fuel_radius>0.54</fuel_radius>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+    <pin id="6">
+      <name>guidetube</name>
+      <type>pin</type> 
+      <materials>0 6;</materials>
+      <fuel_radius>0.54</fuel_radius>
+      <!--min_ref>1</min_ref-->
+    </pin>
+    
+  </pins>
+  
+</geometry>

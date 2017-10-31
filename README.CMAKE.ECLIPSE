@@ -1,0 +1,4 @@
+cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ~/GitLab/ForestV2/
+
+#Starta eclipse - Project/Refresh (F5)
+#Ändringar

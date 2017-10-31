@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  
+  <!-- 
+
+Heterogeneous square
+The reference results have been obtained with dragon, usging
+degree three (d:=3), no refinement (s:=1) and type 2
+quadrature set (QUAD = 2);
+The reference for sn = 02 is keff = 5.755775E-01
+The reference for sn = 04 is keff = 5.806699E-01
+The reference for sn = 06 is keff = 5.900330E-01
+The reference for sn = 08 is keff = 5.941040E-01
+The reference for sn = 12 is keff = 5.957445E-01
+The reference for sn = 16 is keff = 5.963024E-01
+The reference for sn = 20 is keff = 5.964814E-01
+
+This problem is a generalization of the 1D seven
+region problem provided by:
+
+M. Capilla,  CF. Talavera,  D. Ginestar,  G. Verdu, 
+"A nodal collocation method for the calculation of
+the lambda modes of the P_L equations";
+Annals of Nuclear Energy, 32,  (2005), 1825-1853.
+
+  -->
+  
+  <!-- input files -->
+  <input_files>
+    <out>heter2drefl.out.xml</out>
+    <geom>heter2drefl.geom.xml</geom>
+    <mat>heter2d.mat.xml</mat>
+  </input_files>
+  
+  <!-- output options -->
+  <output>
+    <print_mesh>true</print_mesh>
+    <vtk_power>true</vtk_power>
+    <vtk_flux>true</vtk_flux>
+    <vtk_mat>true</vtk_mat>
+  </output>
+
+  <!-- problem -->
+  <problem type="transport">
+    <quadrature name="LevelSymType2" sn="8" />
+  </problem>  
+  
+  <!-- algebra -->
+  <algebra>
+    <matrix_free>true</matrix_free>
+    <eig_solver type="PI">
+      <tol>1.e-8</tol>
+      <max_it>400</max_it>
+    </eig_solver>
+    <inner_solver type="Krylov">
+      <tol>1.e-9</tol>
+      <max_it>400</max_it>
+    </inner_solver>
+  </algebra>
+  
+  <!-- finite elements -->
+  <fe_settings degree="2" n_ref="3" />
+  
+</settings>
+
+

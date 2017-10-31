@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials ngroups="1">
+  <!--This is just a test for the class Materials 
+      that can be used to create the *.mat.xml file 
+      needed to run FOREST..mat.xml-->
+  <mix id="0">
+    <SigmaT>
+       3.703700e-01 ;
+    </SigmaT>
+    <NuSigF>
+       0.000000e+00 ;
+    </NuSigF>
+    <name>moderator</name>
+    <SigmaS>
+       3.340000e-01 ;
+    </SigmaS>
+    <Chi>
+       1.000000e+00 ;
+    </Chi>
+  </mix>
+  <mix id="1">
+    <SigmaT>4.166670e-01;</SigmaT>
+    <NuSigF>1.780000e-01;</NuSigF>
+    <name>fuel</name>
+    <SigmaS>3.340000e-01;</SigmaS>
+    <Chi>1.000000e+00;</Chi>
+  </mix>
+</materials>

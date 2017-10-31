@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="2">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core name="mini core">
+    <nnodes> 1 1 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      17; <!-- X- X+ AXIS -->
+      17; <!-- Y- Y+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      1;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 2 2 <!-- X- AXIS -->
+    </boundary>
+  </core>
+
+  <core_no composed="true" name="mini core">
+    <nnodes> 3 3 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      17 17 17; <!-- X- X+ AXIS -->
+      17 17 17; <!-- Y- Y+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      1 1 1;
+      1 1 1;
+      1 1 1;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 2 2 <!-- X- AXIS -->
+    </boundary>
+  </core_no>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="assembly" type="pin_map">
+      <nnodes> 17 17</nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+      </length> 
+    </lattice>
+    <lattice id="1" name="assembly" type="pin_map">
+      <nnodes> 17 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+      </length> 
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins>
+    <pin id="0" name="moderator" type="box"> 
+      <materials>0;</materials>
+    </pin>
+    <pin id="1" name="fuel-cladding mixture" type="pin"> 
+      <fuel_radius>0.4</fuel_radius>
+      <materials>0 1</materials>
+    </pin>
+    
+  </pins>
+  
+</geometry>

@@ -1,0 +1,32 @@
+/**
+ * @author Anders Ålund. Fraunhofer Chalmers Centre, 2015.
+ * @file   utils/forest_vector.templates.h
+ * @brief  Debug utility
+ */
+#ifndef FOREST_VECTOR_TEMPLATES_H
+#define FOREST_VECTOR_TEMPLATES_H
+
+#ifdef DEBUG
+
+#include "deal.II/base/exceptions.h"
+
+DEAL_II_NAMESPACE_OPEN
+#ifdef Assert
+#undef Assert
+#endif
+#define Assert(cond, exc) {}
+DEAL_II_NAMESPACE_CLOSE
+
+#include "deal.II/lac/vector.templates.h"
+
+DEAL_II_NAMESPACE_OPEN
+#undef Assert
+#define Assert(cond, exc) {                                                    \
+  if (!(cond)) ::dealii::deal_II_exceptions::internals::                       \
+    issue_error(::dealii::deal_II_exceptions::internals::abort_on_exception,   \
+                __FILE__, __LINE__, __PRETTY_FUNCTION__, #cond, #exc, exc);    \
+  }
+DEAL_II_NAMESPACE_CLOSE
+#endif
+
+#endif

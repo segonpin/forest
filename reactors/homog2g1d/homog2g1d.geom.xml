@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="1">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="GeorgiaTech1D">
+    <nnodes> 1 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      15.24; <!-- X- X+ AXIS -->
+    </length>
+    <components> 
+      0; 
+    </components><!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 <!-- X- AXIS --> <!-- X+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="Type0" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        0 0 0 0 0 0;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        2.54  2.54  2.54  2.54  2.54  2.54; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins></pins>
+
+</geometry>

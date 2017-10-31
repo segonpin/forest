@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="1">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="mini core" >
+    <nnodes> 1 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      21.42 ; <!-- X- X+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      2;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 <!-- X- AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="REFLECTOR" type="pin_map">
+      <nnodes> 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+         0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 
+      </length> 
+    </lattice>
+    <lattice id="1" name="MOX" type="pin_map">
+      <nnodes> 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+         2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2  2; 
+         <!-->2  3  6  4  4  6  4  4  5  4  4  6  4  4  6  3  2; <!-->
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 
+      </length> 
+    </lattice>
+    <lattice id="2" name="UO2" type="pin_map">
+      <nnodes> 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+         1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1; 
+         <!-->1  1  6  1  1  6  1  1  5  1  1  6  1  1  6  1  1; <!-->
+      </components>
+      <water_gap>0. 0. 0. 0.</water_gap>
+      <length>
+	1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 
+      </length> 
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins>
+    <!--pins defining the lattices-->
+    <pin id="0" name="moderator" type="box">
+      <materials>0</materials>
+    </pin>
+    <pin id="1" name="UO2" type="pin">
+      <materials>0  1</materials>
+      <fuel_radius>5.400000e-01</fuel_radius>
+    </pin>
+    <pin id="2" name="MOX4.3" type="pin">
+      <materials>0  2</materials>
+      <fuel_radius>5.400000e-01</fuel_radius>
+    </pin>
+    <pin id="3" name="MOX7.0" type="pin">
+      <materials>0  3</materials>
+      <fuel_radius>5.400000e-01</fuel_radius>
+    </pin>
+    <pin id="4" name="MOX8.7" type="pin">
+      <materials>0  4</materials>
+      <fuel_radius>5.400000e-01</fuel_radius>
+    </pin>
+    <pin id="5" name="fissionchamber" type="pin">
+      <materials>0  5</materials>
+      <fuel_radius>5.400000e-01</fuel_radius>
+    </pin>
+    <pin id="6" name="guidetube" type="pin">
+      <materials>0  6</materials>
+      <fuel_radius>5.400000e-01</fuel_radius>
+    </pin>
+    
+  </pins>
+  
+</geometry>

@@ -1,0 +1,41 @@
+# Listing on parameters
+# ---------------------
+
+subsection Geometry
+  set Geometry file = heter2d.geom
+  set Spatial dimension   = 2
+end  
+
+subsection Problem
+  # The type of equation that we are solving:
+  # "transport" for the transport equation
+  # "diffusion" for the diffusion equation
+  set Equation  = Transport
+ 
+  # The method to discretize the transport equation 
+  subsection Transport
+    set Approximation = Discrete ordinates
+
+    ## We only need to specify the number of ordinates when
+    ## using the Discrete Ordinates method
+    subsection Discrete ordinates
+      # Discrete ordinates order
+      set Sn = 2
+    end
+  end
+end
+
+
+# Different solvers for the eigenvalue problem
+subsection Algebra
+  # "AM"  = Arnoldi Method  (L-S   )*x = (      1/keff*M)*x
+  # "PI"  = Power Iteration (L-S   )*x = (      1/keff*M)*x
+  # "PI2" = Power Iteration (L-S_LD)*x = (S_U + 1/keff*F)*x
+  # "PI3" = Power Iteration (L     )*x = (S   + 1/keff*F)*x
+  set Eigenvalue solver = PI
+end
+
+subsection FE settings
+  set FE degree = 5
+end
+

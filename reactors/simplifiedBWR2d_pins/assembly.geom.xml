@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="2">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="mini core">
+    <nnodes> 3 3 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      0.7 12.6 0.7; <!-- X- X+ AXIS -->
+      0.7 12.6 0.7; <!-- Y- Y+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      3 1 3;
+      2 0 2;
+      3 1 3;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      0 0 0 0 <!-- X- AXIS --> <!-- X+ AXIS --> <!-- Y- AXIS --> <!-- Y+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="assembly" type="pin_map">
+      <nnodes> 9 9 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1;
+        1 1 1 1 0 0 1 1 1;
+        1 1 1 0 0 0 1 1 1;
+        1 1 1 0 0 1 1 1 1;
+        1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1;
+        1 1 1 1 1 1 1 1 1;
+      </components>
+      <water_gap>0. 0. 0. 0.;</water_gap>
+      <length>
+	1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4;
+	1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4;
+      </length> 
+    </lattice>
+    <lattice id="1" name="assembly" type="grid">
+      <nnodes> 9 1 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0 0 0 0 0 0 0 0 0;
+      </components>
+      <length> 
+        1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4; <!-- X- X+ AXIS -->
+        0.7; <!-- Y- Y+ AXIS -->
+      </length>      
+    </lattice>
+    <lattice id="2" name="assembly" type="grid">
+      <nnodes> 1 9 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0;
+        0;
+        0;
+        0;
+        0;
+        0;
+        0;
+        0;
+        0;
+      </components>
+      <length> 
+        0.7; <!-- X- X+ AXIS -->
+        1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4 1.4; <!-- Y- Y+ AXIS -->
+      </length>      
+    </lattice>
+    <lattice id="3" name="assembly" type="grid">
+      <nnodes> 1 1 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0;
+      </components>
+      <length> 
+        0.7; <!-- X- X+ AXIS -->
+        0.7; <!-- Y- Y+ AXIS -->
+      </length>      
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins>
+    <pin id="0" name="moderator" type="box"> 
+      <materials>0;</materials>
+    </pin>
+    <pin id="1" name="fuel-cladding mixture" type="pinbox"> 
+      <fuel_radius> 0.575</fuel_radius>
+      <!--><fuel_radius> 0.648818021079920</fuel_radius><!-->
+      <!--0.81317279836=0.575*1.41421356237-->
+      <!-- 0.648818021079920=0.575/0.886226925452758=0.575/(sqrt(pi)/2)-->
+      <materials>0 1;</materials>
+    </pin>
+  </pins>
+  
+</geometry>

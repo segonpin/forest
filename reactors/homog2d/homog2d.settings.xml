@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  
+  <!-- 
+    Homogeneous slab 10.0 cm (it can be a 2.0 cm or 10.0 cm slab)
+    The reference for sn = 96 is keff = 0.662951 (2cm slab)
+    The reference for sn = 96 is keff = 2.00193 (10cm slab)
+    This problem is provided in the following paper:
+    
+    M. Capilla,  CF. Talavera,  D. Ginestar,  G. Verdu, 
+    "A nodal collocation method for the calculation of
+    the lambda modes of the P_L equations";
+    Annals of Nuclear Energy, 32,  (2005), 1825--1853.
+  -->
+  
+  <!-- input files -->
+  <input_files>
+    <out>homog2d.out.xml</out>
+    <geom>homog2d.geom.xml</geom>
+    <mat>homog2d.mat.xml</mat>
+    <mesh>homog2d.mesh.vtk</mesh>
+  </input_files>
+  
+  <!-- output options -->
+  <output>
+    <print_mesh>true</print_mesh>
+    <vtk_power>true</vtk_power>
+    <vtk_flux>true</vtk_flux>
+    <vtk_mat>true</vtk_mat>
+    <ass_bcs>true</ass_bcs> <!-- I have to add it to the reader -->
+  </output>
+  
+  <!-- problem -->
+  <problem type="transport">
+    <quadrature name="LevelSymType2" sn="16" />
+  </problem>  
+  
+  <!-- algebra -->
+  <algebra>
+    <matrix_free>true</matrix_free>
+    <eig_solver type="PI">
+      <tol>1.e-8</tol>
+      <max_it>400</max_it>
+    </eig_solver>
+    <inner_solver type="Krylov">
+      <tol>1.e-9</tol>
+      <max_it>400</max_it>
+    </inner_solver>
+  </algebra>
+  
+  <!-- finite elements -->
+  <fe_settings degree="3" n_ref="3" />
+  
+</settings>
+
+

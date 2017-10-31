@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials ngroups="2">
+  
+  <!-- 
+    Here we define the different materials associated to the
+    material id specified when defining the geometry 
+  -->
+  
+  <mix id="0">
+    <name>water</name>
+    <SigmaT>
+      0.1889751875  1.4632718759;
+    </SigmaT>
+    <Chi>
+      1.0000000000  0.0000000000;
+    </Chi>
+    <SigmaS>
+      0.1506751875  0.0000000000;
+      0.0380000000  1.4535718759;
+    </SigmaS>
+    <NuSigF>
+      0.0000000000  0.0000000000;
+    </NuSigF>
+  </mix>
+  
+  <mix id="1">
+    <name>FuelI</name>
+    <SigmaT>
+      0.2262955419  1.0119409026;
+    </SigmaT>
+    <Chi>
+      1.0000000000  0.0000000000;
+    </Chi>
+    <SigmaS>
+      0.2005955419  0.0000000000;
+      0.0161000000  0.9355409026;
+    </SigmaS>
+    <NuSigF>
+      0.0067000000  0.1241000000;
+    </NuSigF>
+  </mix>
+  
+  <mix id="2">
+    <name>FuelII</name>
+    <SigmaT>
+      0.2251643699  0.9914733293;
+    </SigmaT>
+    <Chi>
+      1.0000000000  0.0000000000;
+    </Chi>
+    <SigmaS>
+      0.1994643699  0.0000000000;
+      0.0156000000  0.9013733293;
+    </SigmaS>
+    <NuSigF>
+      0.0078000000  0.1542000000;
+    </NuSigF>
+  </mix>
+  
+  <mix id="3">
+    <name>FuelIIg</name>
+    <SigmaT>
+      0.2172685004  1.0605578534;
+    </SigmaT>
+    <Chi>
+      1.0000000000  0.0000000000;
+    </Chi>
+    <SigmaS>
+      0.1901685004  0.0000000000;
+      0.0136000000  0.5732578534;
+    </SigmaS>
+    <NuSigF>
+      0.0056000000  0.0187000000;
+    </NuSigF>
+  </mix>
+
+</materials>
+
+

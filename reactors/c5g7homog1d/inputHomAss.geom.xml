@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="1">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="mini core" >
+    <nnodes> 2 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      21.42 21.42 ; <!-- X- X+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      1 2
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 <!-- X- AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="MOX" type="grid">
+      <nnodes> 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+         0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+      </components>
+      <length>
+        1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26;
+       </length> 
+    </lattice>
+    <lattice id="1" name="MOX" type="grid">
+      <nnodes> 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+         0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
+      </components>
+      <length>
+        1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26;
+       </length> 
+    </lattice>
+    <lattice id="2" name="UO2" type="grid">
+      <nnodes> 17 </nnodes> <!-- xnodes ynodes znodes -->
+      <components>
+         1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1;
+      </components>
+      <length>
+        1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26 1.26;
+       </length> 
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins>
+  </pins>
+  
+</geometry>

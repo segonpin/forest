@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="1">
+  
+  <!-- 
+    This geometry is composed of nested structures. The first definition
+    is for the core, which is composed by assemblies, which are composed
+    by pins. 
+  -->
+  
+  <!-- Here is the core description-->
+  <core composed="true" name="PeriodicHomogeneous1D">
+    <nnodes> 2 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      15.24 15.24; <!-- X- X+ AXIS -->
+    </length>
+    <components> 
+      0 0;
+    </components>
+    <boundary> <!-- ALB or VOID or REFL -->
+      2 2 <!-- X- AXIS --> <!-- X+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="Hom" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        3 3 3 3 3 3;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        2.54  2.54  2.54  2.54  2.54  2.54; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+    <lattice id="1" name="Het1" type="grid">
+      <nnodes> 6 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> 
+        0 3 3 3 3 0;
+      </components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+      <length> 
+        1.158 3.231 3.231 3.231 3.231 1.158; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins></pins>
+
+</geometry>

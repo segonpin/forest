@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials ngroups="1">
+  
+  <!-- 
+
+  benchmark description in *.settings.xml
+  -->
+  
+  <mix id="0">
+    <name>moderator</name>
+    <SigmaT>
+      0.37037000;
+    </SigmaT>
+    <Chi>
+      1.00000000;
+    </Chi>
+    <SigmaS>
+      0.33400000;
+    </SigmaS>
+    <NuSigF>
+      0.00000000;
+    </NuSigF>
+  </mix>
+
+  <mix id="1">
+    <name>fuel</name>
+    <SigmaT>
+      0.41666700;
+    </SigmaT>
+    <Chi>
+      1.00000000;
+    </Chi>
+    <SigmaS>
+      0.33400000;
+    </SigmaS>
+    <NuSigF>
+      0.17800000;
+    </NuSigF>
+  </mix>
+</materials>
+

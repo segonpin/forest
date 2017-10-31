@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<geometry dim="1">
+  
+  <!-- 
+  Homogeneous slab 10.0 cm (it can be a 2.0 cm or 10.0 cm slab)
+  The reference for sn = 96 is keff = 0.662951 (2cm slab)
+  The reference for sn = 96 is keff = 2.00193 (10cm slab)
+  This problem is provided in the following paper:
+  
+  M. Capilla,  CF. Talavera,  D. Ginestar,  G. Verdu, 
+  "A nodal collocation method for the calculation of
+  the lambda modes of the P_L equations";
+  Annals of Nuclear Energy, 32,  (2005), 1825--1853.
+  -->
+  
+  <!-- Here is the core description-->
+  <core name="mini core">
+    <nnodes> 1 </nnodes> <!-- xnodes ynodes znodes -->
+    <length> 
+      2.0; <!-- X- X+ AXIS -->
+    </length>
+    <components> <!-- LAT or BOX or PCNW PCNE PCSW PCSE -->
+      0;
+    </components>
+    <boundary> 0 0<!-- ALB or VOID or REFL -->
+                  <!-- X- AXIS -->
+                  <!-- X+ AXIS -->
+    </boundary>
+  </core>
+
+  <!-- Here is the lattice description -->
+  <lattices>
+    <lattice id="0" name="assembly" type="grid">
+      <nnodes> 5 </nnodes> <!-- xnodes ynodes znodes -->
+      <components> <!-- PIN or BOX or PCNW PCNE PCSW PCSE -->
+        0 0 0 0 0;
+      </components>
+      <length> 
+        0.4 0.4 0.4 0.4 0.4; <!-- X- X+ AXIS -->
+      </length>
+    </lattice>
+  </lattices>
+  
+  <!-- Here is the pin description -->
+  <pins></pins>
+
+</geometry>

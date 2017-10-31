@@ -1,0 +1,125 @@
+# temporal files #
+##################
+*~
+*.swp
+*.ass.mat.xml
+*.pin.mat.xml
+
+# backup files from mergetool #
+###############################
+*.orig
+
+# build directories
+###############################
+build.*
+
+# packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.out.power.xml
+*.out.xml
+*.log
+
+#
+*.mem
+callgrind.out.*
+
+# work in progress #
+####################
+workinprogress/*
+workinprogress/manifold_assembly
+otherthings/*
+
+# python parser for the inputs #
+################################
+mylib/python/prob/*.xml
+mylib/python/examples/*/*.xml
+mylib/python/examples/*/*.eps
+mylib/python/examples/*/*.vtk
+mylib/python/examples/*/*.err
+mylib/python/examples/*/*.bla
+tests/*.settings.xml
+tests/*.out.xml
+tests/*.bla
+tests/*.err
+tests/*.vtk
+
+
+# library #
+###########
+mylib/libmylib.a
+mylib/libmylib.so
+#python/
+
+# documentation folder #
+########################
+docs/build
+docs/doxygen/html
+docs/doxygen/xml
+docs/doxygen/latex
+#examples/doxygen
+
+# Swig and python #
+#####################################
+#python/
+#!python/swigtest_forest.py
+#!python/test1_forest.py
+#!python/test2_forest.py
+#pyforest
+!pyforest/__init__.py
+pyforest/*.cxx
+pyforest/*.so
+pyforest/*.py
+
+# Eclipse generated files and folders #
+#####################################
+.cproject
+.project
+.settings
+.csettings
+
+# CMake generated files and folders #
+#####################################
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+
+Makefile
+mylib/Makefile
+testing/Makefile
+
+!docs/Makefile
+#!mylib/python/Makefile
+
+# figures and executables #
+#####################################
+*.gpl
+*.eps
+*.vtk
+*.png
+*.out
+*.exe
+*.pyc
+*.pyo
+
+*.so
+
+# test_suite #
+##############
+
+# reports #
+###########
+reports
+
+/Debug
+/Release
+
+

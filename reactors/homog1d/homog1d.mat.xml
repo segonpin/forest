@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<materials ngroups="1">
+  
+  <!-- 
+  Homogeneous slab 10.0 cm (it can be a 2.0 cm or 10.0 cm slab)
+  The reference for sn = 96 is keff = 0.662951 (2cm slab)
+  The reference for sn = 96 is keff = 2.00193 (10cm slab)
+  This problem is provided in the following paper:
+  
+  M. Capilla,  CF. Talavera,  D. Ginestar,  G. Verdu, 
+  "A nodal collocation method for the calculation of
+  the lambda modes of the P_L equations";
+  Annals of Nuclear Energy, 32,  (2005), 1825--1853.
+  -->
+  
+  <mix id="0" name="mixture" >
+    <SigmaT>
+      1.0000000000;
+    </SigmaT>
+    <Chi>
+      1.0000000000;
+    </Chi>
+    <SigmaS>
+      0.9000000000;
+    </SigmaS>
+    <NuSigF>
+      0.2500000000;
+    </NuSigF>
+  </mix>
+</materials>

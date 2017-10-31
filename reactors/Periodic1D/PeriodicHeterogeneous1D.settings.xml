@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  
+  <!-- 
+    Here we define the different materials associated to the
+    material id specified when defining the geometry 
+  -->
+  
+  <!-- input files -->
+  <input_files>
+    <geom>PeriodicHeterogeneous1D.geom.xml</geom>
+    <mat>Periodic1D.mat.xml</mat>
+  </input_files>
+
+  <!-- problem -->
+  <problem type="transport">
+    <quadrature name="GaussLegendre" sn="48" />
+  </problem>
+  
+  <!-- algebra -->
+  <algebra>
+    <matrix_free>true</matrix_free>
+    <eig_solver type="PI">
+      <tol>1.e-7</tol>
+      <max_it>400</max_it>
+    </eig_solver>
+    <inner_solver type="Krylov">
+      <tol>1.e-9</tol>
+      <max_it>1000</max_it>
+    </inner_solver>
+  </algebra>
+  
+  <!-- finite elements -->
+  <fe_settings degree="3" n_ref="4" />
+  
+</settings>
+
+
